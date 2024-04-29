@@ -1,0 +1,118 @@
+/* Styles specific to the design system go here */
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/functions";
+
+// 2. Include any default variable overrides here
+
+/* START COLOUR */
+
+/* core design system colours */
+
+$dark-grey: #333;               //primary text colour
+$text-alt: #525252;             //Not in use - due to Triple AAA accessibility requirement?
+$interface-grey: #BFBFBF;
+$underlay-selected: #E6E6E6;    //use sparingly
+$underlay-grey: #f5f5f5;
+$underlay-hover: #fafafa;
+
+$rmit-blue: #000054;
+$blue-70: #4D4D88;
+$blue-hover: #0051A8;
+$rmit-red: #E61E2A;
+$correct-green: #009969;
+
+
+/* map our colours to bootstrap variables - is it worth mapping all grey vars? */
+
+$gray-100: $underlay-grey;
+$gray-300: $interface-grey;
+$gray-400: $interface-grey;
+$gray-600: $interface-grey;
+$gray-900: $dark-grey;
+
+$blue: $rmit-blue;
+$green: $correct-green;
+$red: $rmit-red;
+
+
+/* link colours */
+$link-hover-color: $blue-hover;
+$link-hover-decoration: none;
+
+$focus-color: rgba(13, 110, 253, 0.5);
+
+
+/* tables */
+$table-striped-bg: $underlay-grey;
+
+/* END COLOUR */
+
+/* START TYPOGRAPHY variables */
+
+$font-family-sans-serif: "Helvetica Neue", Arial, system-ui, -apple-system, "Segoe UI", Roboto,  "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-family-serif: "Museo700", Museo700, serif;
+
+$lead-font-weight: 500;
+$enable-rfs: false;             //turn off responsive font scaling
+
+@import "bootstrap/bootstrap";
+
+
+// 5. Add additional custom code here
+
+//Used to hide links that we don't want at xs and sm breakpoints
+.hide-sm {
+	@include media-breakpoint-down(md) {  display: none; }
+}
+
+.no-border-top {
+	border-top: 0 !important;
+}
+
+.no-border-bottom {
+	border-bottom: 0 !important;
+}
+
+@mixin carat ($prop: content) {
+	#{$prop}: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23E61E2A'%3e%3cpath fill-rule='evenodd' d='M9.33329 11C9.7065 11 10.0765 11.1557 10.3399 11.4585L16.0063 17.9844L21.661 11.4713C22.144 10.9158 22.9864 10.8561 23.5409 11.3391C24.0965 11.8221 24.1562 12.6635 23.6742 13.219L17.0129 20.8912C16.5075 21.4745 15.5062 21.4755 14.9997 20.8912L8.32668 13.2073C7.84364 12.6517 7.90335 11.8093 8.45891 11.3274C8.71162 11.1077 9.02299 11 9.33329 11Z'/%3e%3c/svg%3e");
+}
+
+@mixin carat-white ($prop: content) {
+	#{$prop}: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M9.33329 11C9.7065 11 10.0765 11.1557 10.3399 11.4585L16.0063 17.9844L21.661 11.4713C22.144 10.9158 22.9864 10.8561 23.5409 11.3391C24.0965 11.8221 24.1562 12.6635 23.6742 13.219L17.0129 20.8912C16.5075 21.4745 15.5062 21.4755 14.9997 20.8912L8.32668 13.2073C7.84364 12.6517 7.90335 11.8093 8.45891 11.3274C8.71162 11.1077 9.02299 11 9.33329 11Z'/%3e%3c/svg%3e");
+}
+
+//Visual language
+@import "dewey-parts/space";
+@import "dewey-parts/typography";
+@import "dewey-parts/links";
+
+//Simple components
+@import 'dewey-parts/button';
+@import "dewey-parts/accordion";
+@import "dewey-parts/blockquote";
+@import 'dewey-parts/table';
+
+//Complex components
+@import 'dewey-parts/footer';
+@import "dewey-parts/breadcrumbs";
+@import "dewey-parts/navigation";
+@import "dewey-parts/top-nav";
+@import 'dewey-parts/video-image';
+
+@import 'dewey-parts/layout';
+
+
+
+
+
+
+// 5. Styles specific to documentation go here (might be worth having a completely seperate stylesheet)
+
+@import "app-specific/code-examples";
+@import "app-specific/colour-swatch";
+@import "app-specific/sidebar";
+    
+
+

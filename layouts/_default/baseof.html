@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Ideally class nav-fixed would be applied to the html tag of the wordpress site -->
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+<head>
+    <!-- meta partial contains charset, viewport, seo etc. -->
+    {{ partial "meta.html" . }}
+    {{ partial "style.html" . }}
+</head>
+<body class="page-template page-template-page-templates page-template-page-sidebar-right page-template-page-templatespage-sidebar-right-php page page-id-2516 page-parent page-child parent-pageid-2500 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_" >
+<!-- Top navigation and menu -->
+
+{{ partial "header.html" }}
+<main id="theme-main">
+    <!-- START hugo representation of page-sidebar-right.php -->
+    <div class="container main-content">
+        <div class="row ">
+			<!-- START right nav -->
+            <div class="col-xl-4 order-last">
+                {{ partial "right-nav" . }}
+            </div>
+            <!-- END right nav -->
+            <!-- START content -->
+            <div class="col-xl-8 order-first">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+            <!-- END content -->   
+        </div>
+    </div>
+    <!-- END hugo representation of page-sidebar-right.php -->
+</main>
+<!-- The footer partial outside the page-content div is an issue for the design system hamburger menu, mabe not not for WordPress site??? -->    
+{{ partial "footer.html" . }}
+{{ partial "script-style.html" . }}
+</body>
+</html>

@@ -1,0 +1,149 @@
+blockquote {
+	display: block;
+	
+    //set responsive padding and margins for blockquote
+    @include do-space(margin-top, md); 
+    @include do-space(margin-bottom, md);
+    
+    @include do-space(padding-top, sm); 
+    @include do-space(padding-bottom, sm); 
+    
+    @include do-space(padding-left, md); 
+    @include do-space(padding-right, md); 
+    
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.25rem solid $rmit-red;
+    background: $underlay-grey;
+	
+	/* add margin for smaller screens */
+    .img-wrap {
+        margin-bottom: 0.5rem;
+    }
+	
+	/* 
+    Ensure the first child has no top margin 
+    and last child has no margin bottom 
+    */
+    .content > *:first-child {
+        margin-top: 0px;
+    }
+
+    .content > *:last-child {
+        margin-bottom: 0px;
+    }
+	
+	/* At medium screen sizes swap to two column layout*/
+    @include media-breakpoint-up(md) { 
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        align-self: stretch;
+
+        .img-wrap {
+            width: 196px;
+			flex-shrink: 0;
+            margin: 0;
+        }
+    } 
+}
+
+//add link class to cater for different options
+blockquote.link {
+	//set padding to zero on blockquote link
+	padding: 0;
+	
+	//replicate padding on the a tag to accommodate hover state :(
+	a { 
+		@include link-feature;
+		
+		@include do-space(padding-top, sm); 
+    	@include do-space(padding-bottom, sm); 
+    
+    	@include do-space(padding-left, md); 
+    	@include do-space(padding-right, md); 
+        
+        display: block;
+		
+		//hide icon on small screens
+		.icon-wrap { display: none; }
+		
+		/* At medium screen sizes swap to two column layout*/
+		@include media-breakpoint-up(md) {
+			display: flex;
+        	align-items: center;
+			width: 100%;
+			gap: 2.5rem;
+			justify-content: space-between;
+			.icon-wrap {
+				width: 6rem;
+				display: block;
+			}
+		}
+		
+		//format the text in the content div
+		.content {
+        
+			h3, p, small {
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+				text-decoration: none;
+			}
+            
+            h3 {
+                /* h4 fontsize */
+                font-size: 1.25rem;
+                @include media-breakpoint-up(md) { font-size: 1.5rem; }
+            }
+
+			//display arrow after title
+			h3::after {
+				@include carat(background-image);
+				content: '';
+				position: absolute;
+				width: 2rem;
+				height: 2rem;
+				margin-left: 0.25rem;
+				transform: rotate(-90deg);
+
+				//position pesky arrow
+				background-position: 4px 0;
+				@include media-breakpoint-up(md) { background-position: 2px 0; }
+			}
+
+			p, small {
+				 color: $dark-grey;
+			}
+
+			p.category {
+				@include type-small;
+				font-weight: 500;   
+			}
+
+			@include media-breakpoint-up(md) { 
+				h4, p, small {
+					margin-top: 1rem;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+		
+		/* 
+		Ensure the first child has no top margin 
+		and last child has no margin bottom 
+		*/
+		.content > *:first-child {
+			margin-top: 0px;
+		}
+
+		.content > *:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	
+    a:hover {
+        h3 {
+           @include link-feature-hover;
+        }
+    }
+	
+}

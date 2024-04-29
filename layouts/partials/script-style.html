@@ -1,0 +1,42 @@
+<!-- From wordpress site -->
+<link rel='stylesheet' id='lightweight-accordion-css' href='https://ll-nav.blackaeonium.net/wp-content/plugins/lightweight-accordion/lightweight-accordion.css?ver=1.3.2' media='all' />
+<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.4.3" id="mathjax-js"></script>
+<script src="https://ll-nav.blackaeonium.net/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+
+<!-- Script to help with menu, might be redundant in WordPress -->
+<script>
+
+//If true, menu covers content
+//If false, menu pushes content down
+var menuCover = true;   
+    
+/* Grab both the menu button and the page content */
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+  
+/* Store display status of menu */
+var menuDisplay = false;
+
+/* Listen for click - comment out for now */
+//if(menuCover) menuButton.addEventListener("click", showHideMenu);
+
+/*
+If menu is hidden, bootstrap wll show it, hide page content.
+If it's displayed, bottstrap will hide it, show the content.
+*/
+
+function showHideMenu() {
+    if(menuDisplay == false)
+    {
+        menuDisplay = true;
+        pageContent.style.display = "none";        
+    }
+    else
+    {
+        menuDisplay = false;
+        pageContent.style.display = "block"; 
+       
+    }
+}
+
+</script>

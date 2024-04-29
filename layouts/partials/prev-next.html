@@ -1,0 +1,51 @@
+{{ $pageName := .Params.name }}
+{{ $prevUrl := "blank" }}
+{{ $prevName := "blank" }}
+{{ $matchFound := "no" }}
+
+{{ with .Params.hide_buttons }}
+ <!-- No buttons here! -->
+{{ else }}
+	<nav class="btn-nav-container" aria-label="Previous and next pages">
+	{{ range .Site.Menus.main }}
+		{{ if .HasChildren }}
+			{{ range .Children }}
+				<!-- if $matchFound is yes, we've gone one past matched item -->
+				{{ if eq $matchFound  "yes" }}
+					<!-- pump out next button -->
+					<a class="btn btn-nav-next" aria-label="Next page" href="{{ .URL }}">{{ .Name }}</a> 
+					{{ $pageName = "break out of the loop" }}
+					<!-- if lieu of a break func, set $matchfound, to vals which won't trigger code -->
+					{{ $matchFound = "complete" }}
+				{{ end }}
+				<!-- if we match menu name and page name -->
+				{{ if eq $pageName .Name }}
+					{{ $matchFound = "yes" }}
+					<!-- Create Prev button if prevUrl is not blank - first item in menu will be -->
+					{{if ne $prevUrl "blank" }}
+						<a class="btn btn-nav-prev" aria-label="Previous page" href="{{ $prevUrl }}">{{ $prevName }}</a>
+					{{ end }}
+				{{ else }}
+					<!-- if there was no match, record previous url + name -->
+					{{ $prevUrl = .URL }}
+					{{ $prevName = .Name }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	</nav>
+{{ end }}
+
+<!--
+loop through the menu array
+    if we matched last loop, 
+        pump out a next button
+        update pageName and match vars to stop making more buttons
+
+    if page name and menu name match
+        update match var to yes
+        if prev is not blank
+            pump out previous button
+    else
+        record prevName and URL
+-->

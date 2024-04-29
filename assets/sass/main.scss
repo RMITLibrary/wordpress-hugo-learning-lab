@@ -1,0 +1,51 @@
+@import "theme_variables"; 
+@import "bootstrap5/bootstrap";
+@import "wp_basic_styles";  //from parent theme by default  
+@import "picostrap"; //from parent theme by default  
+@import "woocommerce";  //from parent theme by default       
+//@import "debug-structure-helper"; // UNCOMMENT TO DEBUG YOUR PAGE: This code helps debugging your page, hightlighting main <section>s, bootstrap containers, rows, columns and .lc-block elements.     
+
+
+@import "design-system/utilities";
+
+//Visual language
+@import "design-system/space";
+@import "design-system/typography";
+@import "design-system/links";
+
+//Simple components
+@import 'design-system/button';
+@import "design-system/accordion";
+@import "design-system/blockquote";
+@import 'design-system/table';
+
+//Complex components
+@import 'design-system/footer';
+@import "design-system/breadcrumbs";
+@import "design-system/navigation";
+@import "design-system/top-nav";
+@import 'design-system/video-image';
+
+@import 'design-system/layout';
+
+.ab-top-menu {
+    ul, ol {
+        margin-bottom: 0 !important;
+    }
+}
+
+#wp-admin-bar-root-default {
+    ul, ol {
+        margin-bottom: 0 !important;
+    }
+}
+
+//@import "learning-lab/old-site-styles"
+
+/* 
+    NOTE: hugo complies to /sass/main.min.css 
+    Which is different from the wordpress
+*/
+  
+//A DEMO STATEMENT for testing      
+//body {background:lime;  }  

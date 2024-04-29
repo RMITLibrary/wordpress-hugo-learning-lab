@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on Hugo wodpress</title>
+    <link>http://localhost:1313/examples/</link>
+    <description>Recent content in Examples on Hugo wodpress</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <atom:link href="http://localhost:1313/examples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example 2</title>
+      <link>http://localhost:1313/examples/example-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/example-2/</guid>
+      <description>Home Referencing Quoting When you are researching a topic, sometimes you want to include the exact words of another author or speaker in your own work. Using someone’s words in their original form is called quoting, or including a direct quote.&#xA;When to quote Quoting is the way to include the exact words of others in our own work. You might want to use a quote when the specific words that an author or speaker has used are important, such as when someone offers a new definition for a term or presents a new theory.</description>
+    </item>
+    <item>
+      <title>Example 3</title>
+      <link>http://localhost:1313/examples/example-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/example-3/</guid>
+      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Integrating ideas with reporting words Not all information is created equal.&#xA;When you choose information for your assignments, there should be a continual evaluation process occurring. Evaluate information for its relevance and usefulness to your work, and its quality.&#xA;Not all information that is published is credible and reliable, especially if you find that information on the web.</description>
+    </item>
+  </channel>
+</rss>
