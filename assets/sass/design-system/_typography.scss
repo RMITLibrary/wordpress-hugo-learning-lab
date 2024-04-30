@@ -83,7 +83,7 @@ h6, .h6 {
 Wrapping inside of id theme-main for wordpress
 Admin buttons get margin-bottom, heard to remove otherewise :( 
 */
-#theme-main {
+.main-content {
     ul, ol {
         @include do-space(margin-top, xs);          //should we have margin-top?
         @include do-space(margin-bottom, sm, important);

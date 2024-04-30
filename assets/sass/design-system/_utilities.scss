@@ -1,6 +1,6 @@
 //Used to hide links that we don't want at xs and sm breakpoints
 .hide-sm {
-	@include media-breakpoint-down(md) {  display: none; }
+	@include media-breakpoint-down(md) {  display: none !important; }
 }
 
 .no-border-top {

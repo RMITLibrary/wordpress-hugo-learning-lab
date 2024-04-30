@@ -37,7 +37,7 @@ get_header();
 			<p>&nbsp;</p>
 			<?php get_template_part( 'page-templates/taxonomy', 'page' ); ?>
         </div>
-        <!-- END content -->   
+        <!-- END content --> 
     </div>
 </div>
 

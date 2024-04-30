@@ -3,10 +3,12 @@ title: Example 1
 name: Example 1
 parent: "Examples"
 ---
-<ul class="breadcrumbs">
-	<li><a href="/dewey-design/" tabindex="-1">Home</a></li>
-	<li><a href="" tabindex="-1">Referencing</a></li>
-</ul>
+<div class="aioseo-breadcrumbs">
+	<span class="aioseo-breadcrumb"><a href="https://ll-nav.blackaeonium.net" title="Home">Home</a></span>
+	<span class="aioseo-breadcrumb-separator">/</span><span class="aioseo-breadcrumb"><a href="https://ll-nav.blackaeonium.net/assignments/" title="Assignments">Assignments</a></span>
+	<span class="aioseo-breadcrumb-separator">/</span><span class="aioseo-breadcrumb"><a href="https://ll-nav.blackaeonium.net/assignments/getting-started-with-assignments/" title="Getting started with assignments">Getting started with assignments</a></span>
+	<span class="aioseo-breadcrumb-separator">/</span><span class="aioseo-breadcrumb"><a href="https://ll-nav.blackaeonium.net/assignments/getting-started-with-assignments/researching-your-assignment/" title="Researching your assignment">Researching your assignment</a></span>
+</div>
 <a id="main-content"></a>
 <h1 class="margin-top-zero">Integrating ideas with reporting words</h1>
 <p class="lead">Whether you are paraphrasing or quoting, integrating the ideas of others with your own argument is an important part of clear, cohesive communication. It’s easy to become repetitive, using ‘this author said’ and ‘that author said’ over and over. Reporting words tell your audience more about a person’s position on a topic, not just that they ‘said’ something.</p>
@@ -110,4 +112,8 @@ parent: "Examples"
 	<div class="content">
 		<p><strong>Please note</strong>: The examples on this page use the RMIT Harvard referencing style. Check your course handbook or speak to your instructor about the referencing style required in your area of study.</p>
 	</div>
+</blockquote>
+
+<blockquote>
+		<p><strong>Please note</strong>: The examples on this page use the RMIT Harvard referencing style. Check your course handbook or speak to your instructor about the referencing style required in your area of study.</p>
 </blockquote>
