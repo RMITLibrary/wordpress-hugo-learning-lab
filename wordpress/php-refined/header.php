@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) || exit;
                 <div class="col-auto">
                     <div class="top-nav-left">
                         <div class="rmit-logo"></div>
-                        <h2><a href="/dewey-design/">Learning Lab</a></h2>
+                        <h2><a href="/">Learning Lab</a></h2>
                     </div> 
                 </div>
                 <div class="col">       
