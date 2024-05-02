@@ -54,7 +54,7 @@
     }
     
     /* 
-    Change background colour and add text unerline. 
+    Change background colour and add text underline. 
     Focus state is retained when accordion is expanded until user clicks elsewhere.
     */
     .accordion-button:focus {
@@ -117,6 +117,9 @@
 .transcript {
     margin-top: 1rem;
 	border: 0px;
+	border-bottom: 1px solid $interface-grey;
+	max-width: 40rem;	/* Useful if transcript is not wraped in figure tag */
+	
     
     .accordion-button {
 
@@ -143,6 +146,10 @@
         font-size: 0.9375rem !important;
     }
 
+}
+
+figure .transcript {
+	border-bottom: 0px;	/* Border included in figure itself */
 }
 
 

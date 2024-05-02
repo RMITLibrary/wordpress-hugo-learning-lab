@@ -15,11 +15,26 @@ figure {
     max-width: $img-width-lg;
 }
 
-/* Use this class to align leeft rather than centre */
+/* Use this class to align left rather than centre */
 figure.img-left {
     margin-left: 0;
     margin-right: 0;
 }
+
+.responsive-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+	
+	@include media-breakpoint-up(md) { 
+		width: 40rem;
+		height: 22.5rem;
+		padding-bottom: 0;
+	}
+}
+
 
 .video {
 	border-bottom: 1px solid $interface-grey;
@@ -30,6 +45,9 @@ figure.img-left {
 		height: 0;
 		overflow: hidden;
 		width: 100%;
+		
+			/* At large screen sizes, we can set 16:9 values as layout is adaptive rather than responsive */
+		
 	}
 	
 	figcaption {
@@ -51,6 +69,7 @@ figure.img-left {
 		height: 0;
 		overflow: hidden;
 		width: 100%;
+		
 	}
 }
 
