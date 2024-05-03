@@ -44,16 +44,20 @@ html.nav-fixed {
     
 }
 
-.navbar {
+.navbar2 {
     
     color: $white;
     width: 100%;
-    /*background-color: $dark-grey !important;*/  
+    background-color: none !important;
     padding: 0;
     
     .blue-bar {
         @include media-breakpoint-up(md) {
-            background-color: $blue  !important;
+            position: absolute;
+            top: 0;
+            z-index: -2;
+            background-color: $rmit-blue  !important;
+            width: 100%;
             height: 3.5rem;
         }  
     }
@@ -109,7 +113,7 @@ html.nav-fixed {
     @include media-breakpoint-up(md) {
         
         overflow: visible;		//RMIT red tab overhangs blue bar
-        height: 3.5rem;
+        //height: 3.5rem;
         
         .top-nav-left { 
             margin-left: 0;  
@@ -168,7 +172,7 @@ html.nav-fixed {
     
     @include media-breakpoint-up(md) {
         
-        
+        overflow: visible;
         
         /*overflow: visible;		//RMIT red tab overhangs blue bar
         height: 3.5rem;
@@ -196,7 +200,8 @@ html.nav-fixed {
     }
 }
 
-#navbarNavDropdown {
+#navbarNavDropdown2 {
+    background-color: $blue;
     .navbar-nav {
         min-height: 100vh;
         padding-bottom: 4rem; 
@@ -209,7 +214,7 @@ html.nav-fixed {
 
 .top-nav {
     color: $white;
-    background-color: $blue;
+    background-color: $rmit-blue;
     height: $space-sm-xl;
 	width: 100%;
     
