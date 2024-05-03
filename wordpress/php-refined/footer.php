@@ -136,7 +136,41 @@
 
 
 	<?php wp_footer(); ?>
+    <!-- Script to help with menu -->
+<script>
+    
+/* Grab both the menu button and the page content */
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+/* Store display status of menu */
+var menuDisplay = false;
 
+/* Listen for click - comment out for now */
+menuButton.addEventListener("click", showHideMenu);
+
+/*
+If menu is hidden, bootstrap wll show it, hide page content.
+If it's displayed, bottstrap will hide it, show the content.
+*/
+
+function showHideMenu() {
+    if(menuDisplay == false)
+    {
+        menuDisplay = true;
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        menuDisplay = false;
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+    }
+}
+
+</script>
 	</body>
 </html>
 
