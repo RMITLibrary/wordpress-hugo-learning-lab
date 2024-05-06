@@ -78,7 +78,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
     <a class="skip-link visually-hidden-focusable" href="#theme-main">Skip to content</a>
     
-<nav data-bs-theme class="navbar navbar-expand-none bg-primary"  aria-label="Main Navigation">
+    <nav id="blergh" data-bs-theme class="navbar navbar-expand-none"  aria-label="Main Navigation">
         <div class="blue-bar"></div>
         <div class="container">
             <div class="top-nav-left">
@@ -89,7 +89,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+        </div> 
+    </nav>
+    
+    
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul id="menu-main-nav" class="navbar-nav me-auto mb-2 mb-md-0 "><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown nav-item nav-item-4210"><a href="https://ll-style.blackaeonium.net/art-and-design/" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Art and design</a>
 <ul class="dropdown-menu  depth_0">
@@ -133,8 +136,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 
                 
             </div> 
-        </div> 
-    </nav>
+        
 </div>
 <main id="theme-main">
     
@@ -555,6 +557,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script>
     
  
+var wrapperNavBar = document.getElementById("blergh");
 var menuButton = document.getElementById("menu-button");
 var pageContent = document.getElementById("theme-main"); 
 var footer = document.getElementById("wrapper-footer-colophon"); 
@@ -574,12 +577,16 @@ function showHideMenu() {
         menuDisplay = true;
         pageContent.style.display = "none"; 
         footer.style.display = "none"; 
+        
+        wrapperNavBar.style.backgroundColor = "#000056";
     }
     else
     {
         menuDisplay = false;
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
+        
+         wrapperNavBar.style.backgroundColor = none;
     }
 }
 
