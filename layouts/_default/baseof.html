@@ -11,8 +11,9 @@
 
 {{ partial "top-nav.html" }}
 <main id="theme-main">
+<div id="page-content">
     <!-- START hugo representation of page-sidebar-right.php -->
-    <div class="container main-content">
+    <div class="container">
         <div class="row ">
 			<!-- START right nav -->
             <div class="col-xl-4 order-last">
@@ -29,6 +30,7 @@
         </div>
     </div>
     <!-- END hugo representation of page-sidebar-right.php -->
+</div>
 </main>
 <!-- The footer partial outside the page-content div is an issue for the design system hamburger menu, mabe not not for WordPress site??? -->    
 {{ partial "footer.html" . }}

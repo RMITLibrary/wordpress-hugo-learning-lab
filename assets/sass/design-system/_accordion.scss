@@ -3,7 +3,6 @@
     @include do-space(margin-bottom, lg); 
 }
 
-
 .accordion-item {
     border-color: $interface-grey;
     border-left: 0px;
@@ -68,7 +67,7 @@
         padding: 0.5rem 0 0 0;
         @include do-space(margin-bottom, lg); 
 
-        :first-child {
+        > first-child {
             @include do-space(margin-top, zero);   
         }
     }
@@ -116,9 +115,8 @@
 
 
 .transcript {
-    //margin-top: 1rem; //comment back in once plugin is updated.
 	border: 0px;
-	border-bottom: 1px solid $interface-grey; //comment back in once plugin is updated.
+	border-bottom: 1px solid $interface-grey;
 	max-width: 40rem;	/* Useful if transcript is not wraped in figure tag */
 	
     
@@ -127,7 +125,7 @@
         font-size: 1rem !important;
         @include link-normal;
 
-        padding: 0rem 0 1rem 0;
+        padding: 0.5rem 0 1rem 0;
 
         @include media-breakpoint-up(md) { 
             font-size: 1.125rem !important;
@@ -161,7 +159,7 @@ figure .transcript {
         background-color: $underlay-grey !important;
         font-size: 1.125rem !important;
 
-        padding: 0.5rem 0 0.75rem 0;
+        padding: 0.75rem 0 0.75rem 0;
 
         @include media-breakpoint-up(md) { 
             font-size: 1.25rem !important;

@@ -15,6 +15,7 @@ add_shortcode('subscribe', 'subscribe_link_att');
 function bootstrap_accordion_att($atts, $content = null) {
     $default = array(
         'title' => 'My accordion',
+        'type' => 'Regular'
     );
     $a = shortcode_atts($default, $atts);
     $content = do_shortcode($content);
@@ -22,14 +23,22 @@ function bootstrap_accordion_att($atts, $content = null) {
     $headId = generate_id($a['title'], "head");
     $bodyId = generate_id($a['title'], "body");
     
+    $labelTag = 'h2';
+    $extraClass = '';
+    
+    if ($a['type'] == 'transcript') {
+        $$labelTag = 'p';
+        $extraClass = 'transcript';
+    }
+    
     $output = '';
     
-    $output .= '<div class="accordion-item">';
-    $output .= '<h2 class="accordion-header" id="' . $headId .'">';
+    $output .= '<div class="accordion-item ' . $extraClass . '">';
+    $output .= '<' . $labelTag .' class="accordion-header" id="' . $headId .'">';
     $output .= '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $bodyId . '" aria-expanded="false" aria-controls="' . $bodyId . '">';    
     $output .= $a['title'];
     $output .= '</button>';
-    $output .= '</h2>';
+    $output .= '</' . $$labelTag . '>';
     $output .= '<div id="' . $bodyId . '" class="accordion-collapse collapse" aria-labelledby="' . $headId . '">';
     $output .= '<div class="accordion-body">';
     $output .= $content;
@@ -61,6 +70,19 @@ add_shortcode('bs-accordion', 'bootstrap_accordion_att');
         </div>
     </div>
 </div>
+
+<div class="accordion-item transcript">
+		<p class="accordion-header" id="Transcript-head">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Transcript-body" aria-expanded="false" aria-controls="Transcript-body">
+			Transcript
+		  </button>
+		</p>
+		<div id="Transcript-body" class="accordion-collapse collapse" aria-labelledby="Transcript-head">
+		  <div class="accordion-body">
+			 <!-- content goes here -->
+		  </div>
+		</div>
+	</div>
 
 */
 

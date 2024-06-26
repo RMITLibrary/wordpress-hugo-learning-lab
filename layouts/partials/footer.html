@@ -1,22 +1,23 @@
 {{ with .Params.hide_footer }}
  <!-- No footer here! -->
 {{ else }}
- <!-- START ask the librsary -->
-<div class="wrapper footer-container" id="wrapper-footer-colophon">
+ <div class="footer-container" id="wrapper-footer-colophon">
 	<div class="container">
         <div class="row">
             <div class="col">
 				<!-- START ask the library -->
 				<div class="ask-container">
-					<div class="ask-the-library">
+					
+					<section class="ask-the-library">
 						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
-							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" />
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
 							<div class="ask-text">
 								<p class="lead">Still can't find what you need?</p>
 								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
 							</div>
 						</a>
-					</div>
+					</section>
+			
 				</div>
 				<!-- END ask the library -->
 			</div>
@@ -27,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="acknowledgement-container">
+                    <section class="acknowledgement-container">
                         <div class="acknowledgement-image">
                             <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
                         </div>
@@ -38,9 +39,9 @@
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
                             <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                            <a href="#" class="link-large">More information</a>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -91,7 +92,7 @@
                         <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
                         <!-- END facebook -->
                         <!-- START twitter/x -->
-                        <li><a href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
                         <!-- END twitter/x -->
                         <!-- START insta -->
                         <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
@@ -117,5 +118,3 @@
     <!-- END footer -->
 </div>
 {{ end }}
-
-<script>hljs.highlightAll();</script>

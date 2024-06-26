@@ -14,6 +14,9 @@ var footer = document.getElementById("wrapper-footer-colophon");
   
 /* Store display status of menu */
 var menuDisplay = false;
+    
+/* Store content scroll position */
+var scrollPosition;
 
 /* Listen for click - comment out for now */
 menuButton.addEventListener("click", showHideMenu);
@@ -27,10 +30,11 @@ function showHideMenu() {
     if(menuDisplay == false)
     {
         menuDisplay = true;
+        scrollPosition = window.scrollY;  
         pageContent.style.display = "none"; 
         footer.style.display = "none"; 
         
-        wrapperNavBar.style.backgroundColor = "#000056";
+        //wrapperNavBar.style.backgroundColor = "#000056";
     }
     else
     {
@@ -38,7 +42,11 @@ function showHideMenu() {
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
         
-         wrapperNavBar.style.backgroundColor = none;
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+        
+         //wrapperNavBar.style.backgroundColor = none;
     }
 }
 
