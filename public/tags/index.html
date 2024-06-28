@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56367&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -72,40 +72,40 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <body class="page-template page-template-page-templates page-template-page-sidebar-right page-template-page-templatespage-sidebar-right-php page page-id-2516 page-parent page-child parent-pageid-2500 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_" >
 
 
-<nav>
-<a href="#main-content" class="visually-hidden">Skip to main content</a>
-<div class="top-nav">
-    <div class="container">
-        <div class="row">
-            <div class="col-auto">
-                <div class="top-nav-left">
-                    <div class="rmit-logo"></div>
-                    <h2><a href="/dewey-design/">Learning lab</a></h2>
-                </div> 
-            </div>
-            <div class="col">       
-                <ul>
-					<li class="hide-sm">
-						<a href="https://www.rmit.edu.au/library">Library</a>
-					</li>
-					<li class="search">
-						<a href="/search/">
-							<div class="hide-sm">Search</div>
-							<div class="mag-glass"></div>
-						</a>
-					</li>
-					<li class="menu">
-						<button id="menu-button" 
-						class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
-						data-bs-target="#nav-menu" aria-expanded="false" 
-						aria-controls="nav-menu">Click for main menu</button>
-					</li>
-                </ul> 
-            </div>   
-        </div>
-    </div>
-</div>
-<div id="nav-menu" class="collapse"  aria-label="Main Menu">
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+	<div class="top-navigation">
+		
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-auto left-nav">
+					<div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+					<a href="/design-system/" class="h2">Design system<span class="visually-hidden"> homepage</span></a>
+				</div>
+				
+				
+				<div class="col">
+					
+					<ul>
+						<li class="hide-sm">
+							<a href="https://www.rmit.edu.au/library">Library</a>
+						</li>
+						
+						<li class="menu">
+							<button id="menu-button" 
+							class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+							data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+							aria-controls="context-menu">Click for main menu</button>
+						</li>
+					</ul> 
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
     <div class="container nav-container not-wordpress">
         <div class="row ">
             
@@ -244,11 +244,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             </div>
             
         </div>
-</div>
 </nav>
+</header>
 <main id="theme-main">
+<div id="page-content">
     
-    <div class="container main-content">
+    <div class="container">
         <div class="row ">
 			
             <div class="col-xl-4 order-last">
@@ -288,25 +289,27 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
     </div>
     
+</div>
 </main>
     
 
- 
-<div class="wrapper footer-container" id="wrapper-footer-colophon">
+ <div class="footer-container" id="wrapper-footer-colophon">
 	<div class="container">
         <div class="row">
             <div class="col">
 				
 				<div class="ask-container">
-					<div class="ask-the-library">
+					
+					<section class="ask-the-library">
 						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
-							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" />
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
 							<div class="ask-text">
 								<p class="lead">Still can't find what you need?</p>
 								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
 							</div>
 						</a>
-					</div>
+					</section>
+			
 				</div>
 				
 			</div>
@@ -317,7 +320,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="acknowledgement-container">
+                    <section class="acknowledgement-container">
                         <div class="acknowledgement-image">
                             <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
                         </div>
@@ -328,9 +331,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
                             <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                            <a href="#" class="link-large">More information</a>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -381,7 +384,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                         <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
                         
                         
-                        <li><a href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
                         
                         
                         <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
@@ -408,8 +411,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </div>
 
 
-<script>hljs.highlightAll();</script>
-
 <link rel='stylesheet' id='lightweight-accordion-css' href='https://ll-nav.blackaeonium.net/wp-content/plugins/lightweight-accordion/lightweight-accordion.css?ver=1.3.2' media='all' />
 <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.4.3" id="mathjax-js"></script>
 <script src="https://ll-nav.blackaeonium.net/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
@@ -425,6 +426,9 @@ var footer = document.getElementById("wrapper-footer-colophon");
   
  
 var menuDisplay = false;
+    
+ 
+var scrollPosition;
 
  
 menuButton.addEventListener("click", showHideMenu);
@@ -436,10 +440,11 @@ function showHideMenu() {
     if(menuDisplay == false)
     {
         menuDisplay = true;
+        scrollPosition = window.scrollY;  
         pageContent.style.display = "none"; 
         footer.style.display = "none"; 
         
-        wrapperNavBar.style.backgroundColor = "#000056";
+        
     }
     else
     {
@@ -447,7 +452,11 @@ function showHideMenu() {
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
         
-         wrapperNavBar.style.backgroundColor = none;
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+        
+         
     }
 }
 
