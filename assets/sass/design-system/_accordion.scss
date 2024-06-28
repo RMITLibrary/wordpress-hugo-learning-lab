@@ -181,3 +181,15 @@ figure .transcript {
         background-color: $underlay-grey;
     }
 }
+
+/* 
+Ensure the first child has no top margin 
+and last child has no margin bottom 
+*/
+.accordion-body > *:first-child {
+    margin-top: 0px;
+}
+
+.accordion-body > *:last-child {
+    margin-bottom: 0px;
+}
