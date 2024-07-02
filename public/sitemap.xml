@@ -2,20 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:56367/sandbox/</loc>
+    <loc>http://localhost:51656/sandbox/</loc>
   </url><url>
-    <loc>http://localhost:56367/categories/</loc>
+    <loc>http://localhost:51656/categories/</loc>
   </url><url>
-    <loc>http://localhost:56367/example-1/</loc>
+    <loc>http://localhost:51656/example-1/</loc>
   </url><url>
-    <loc>http://localhost:56367/examples/example-2/</loc>
+    <loc>http://localhost:51656/examples/example-1/</loc>
   </url><url>
-    <loc>http://localhost:56367/examples/example-3/</loc>
+    <loc>http://localhost:51656/examples/example-2/</loc>
   </url><url>
-    <loc>http://localhost:56367/examples/</loc>
+    <loc>http://localhost:51656/examples/example-3/</loc>
   </url><url>
-    <loc>http://localhost:56367/</loc>
+    <loc>http://localhost:51656/examples/</loc>
   </url><url>
-    <loc>http://localhost:56367/tags/</loc>
+    <loc>http://localhost:51656/</loc>
+  </url><url>
+    <loc>http://localhost:51656/landing/</loc>
+  </url><url>
+    <loc>http://localhost:51656/tags/</loc>
   </url>
 </urlset>
