@@ -7,157 +7,377 @@ parent: "Examples"
 <h1 class="margin-top-zero">How to use DIEP (Describe Interpret Evaluate Plan)</h1>
 <p><style type="text/css"> .style2 { background-color: #FFFFFF !important; border-left: 5px solid #7EE0AB !important; margin-top: 15px !important; margin-bottom: 15px !important; } </style>
 </p><p> <!-- Content begins --></p>
+
 <p class="lead">Use the DIEP process to guide your reflective writing and help you stay focused and on task.</p>
+<iframe src="https://rmit.pressbooks.pub/learninglab/wp-admin/admin-ajax.php?action=h5p_embed&id=4" width="684" height="800" frameborder="0" allowfullscreen="allowfullscreen" title="Essay, Report, Reflective Writing"></iframe><script src="https://rmit.pressbooks.pub/app/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+
+
+
+<!-- START Accordion group -->
 <div class="accordion" id="accordion-example">
-[bs-accordion title="Describe"]
-<h2>1. Describe the insight</h2>
-<p>An insight is something new that you learned or realised. The insight must be relevant to the course and ideally could change your thinking or behaviour in the future. Your insight may apply to your studies, your professional practice, or your future goals.</p>
-Examples
-The most important thing I realised this week is the role of questioning in project management…
+[bs-accordion title="Purpose (why are you writing the task?)" open="true"]
+<h3>Essay</h3>
+<ul>
+    <li>To present a well-argued response to a question or proposition, using analysis and discussion of relevant literature </li>
+    <li>To establish a proposition (thesis)</li>
+</ul>
+<h3>Report</h3>
+<ul>
+    <li>To investigate and analyse an issue and present information thoroughly and logically</li>
+    <li>Often to recommend action to solve a problem </li>
+    <li>Usually, to make proposals </li>
+</ul>
+<h3>Reflective writing</h3>
+<ul>
+    <li>To record the development of your ideas and insights and the possible implications for practice </li>
+    <li>To reflect on the content of the subject and on your own learning</li>
+    <li>To identify and discuss your responses to concepts/issues in course work, reading, and/or practical placement, etc. </li>
+</ul>
+[/bs-accordion]
+[bs-accordion title=" Topic (what is the task about?)"]
+<h3>Essay</h3>
+<ul>
+    <li>Usually, a question or a preposition</li>
+    <li>Based on research, sometimes fieldwork</li>
+</ul>
+<h3>Report</h3>
+<ul>
+    <li>Usually a problem or case study, based on a real or hypothetical situation</li>
+    <li>Refers to reading, fieldwork or practical work</li>
+</ul>
+<h3>Reflective writing</h3>
+<ul>
+    <li>Often a response to an aspect of a course, e.g., class/studio/lab, practical placement (WIL), and/or course readings</li>
+    <li>
+Generally, focuses on a particular aspect of course content and its potential application to theory and/or practice</li>
+</ul> 
+[/bs-accordion]
 
-A reading technique that I have learned recently that I find most valuable for my study is pre-reading, especially skimming and scanning
+[bs-accordion title="Audience (who are you writing for?)"]
+<h3>Essay</h3>
+<ul>
+    <li>Written for an academic audience (your lecturer)</li>
+    <li></li>
+    <li></li>
+</ul>
+<h3>Report</h3>
+<ul>
+    <li>Written for the audience established in the topic (a decision-maker, e.g., client, manager), but in reality, your lecturer is also the audience</li>
+</ul>
+<h3>Reflective writing</h3>
+<ul>
+    <li>Typically written for yourself – as a record of an insight or learning experience – but your lecturer is also the audience in an assessment task</li>
+</ul>
+[/bs-accordion]
 
-2. Describe the circumstances
-Provide brief and relevant details of the situation from which you gained the insight. Say what was happening when this learning occurred.
+[bs-accordion title="Format (how will you structure your writing?)"]
+<h3>Essay</h3>
+<ul>
+    <li>Three parts: introduction, body, conclusion</li>
+    <li>May contain images in art, design, etc.</li>
+    <li>Typically, no bullet points, graphs, tables, headings, or sub-headings*</li>
+</ul>
+<p class="small">*Some lecturers in business and nursing require headings – see relevant guides.</p>
+<h3>Report</h3>
+<ul>
+    <li>Divided into sections with headings; sections vary according to type and length of report</li>
+    <li>Headings and sub-headings may be numbered</li>
+    <li>May contain bullet points, figures, and tables</li>
+</ul>
+<h3>Reflective writing</h3>
+<ul>
+    <li>No formal format requirements, but often dated if part of a journal to trace the development of ideas, insights, and learning</li>
+    <li>Usually no headings; may be separated into sections if it suits the purpose</li>
+    <li>Frequently written as a blog</li>
+</ul>
+[/bs-accordion]
 
-What was the context? (e.g. on placement, during reading)
-What was the particular trigger? (e.g. a comment from a patient, a concept in the readings, a particular question or activity in class)
-Examples
-I learned this from the lecture in Project Management Techniques by a guest lecturer, Dr Strangelove. She started her presentation by asking us to build a tower from straws… I…
+[bs-accordion title="Style (should it be formal or informal?)"]
+<h3>Essay</h3>
+<ul>
+    <li>Formal standard English in paragraphs and complete sentences</li>
+    <li>Needs the objectivity suited to an academic argument and discourse</li>
+</ul>
+<h3>Report</h3>
+<ul>
+    <li>Formal standard English</li>
+    <li>Must be objective to reflect academic and professional context</li>
+    <li>Point form sometimes used – to allow for easy access to key information; text often supported by figures and tables</li>
+</ul>
+<h3>Reflective writing</h3>
+<ul>
+    <li>Standard written English, using paragraphs and complete sentences; use of first person ‘I’ is permitted</li>
+    <li>May be subjective to reflect your responses, speculations, and interpretations
+</li>
+</ul>  
+[/bs-accordion]
 
-I learned about these techniques for efficient reading from an exercise using a chapter from Anstey (2002) about the four resources model. We used the skimming technique which involves noting full details about the text and what it contains before reading it. We had to look at the whole chapter to identify the main ideas through the headings. I realised I can get a lot of information about the main ideas in a text without actually reading it.
-    
+[bs-accordion title="Assessment (what are the success criteria?)"]
+<h3>Essay</h3>
+<p>Success depends on the quality of the argument, how each point relates to the thesis, and how well evidence from the literature is used to support the claims and main ideas</p>
+<h3>Report</h3>
+<p>Success depends on the demonstration of good research, objective presentation, and analysis of relevant information that responds to the issue</p>
+<h3>Reflective writing</h3>
+<p>Success depends on demonstration of insights into the course content, and developing awareness of inter-relationships and implications of different aspects of course content
+</p>
 [/bs-accordion]
 </div>
+<!-- END Accordion group -->
+
+<h2>Other resources</h2>
+[blockquote-nav  link='/cohesion' title='Starting your first assighnment' extra-info='6 pages / 20 mins']This  tutorial walks you through the process of preparing, planning and writing an assignment with quick links to the resources you can use at each stage.[/blockquote-nav]
+[blockquote-nav category='Nursing' link='/cohesion' title='Critical incident report for nursing' extra-info='6 pages / 20 mins']This series of videos covers how to structure and write a critical incident reflection.[/blockquote-nav]
+[blockquote-nav category='Art and design' link='/cohesion' title='Mind mapping an artist statement']A guide for writing a structured reflection. The studio knowledge object records learning and insights gained in a design studio course. These insights may be as small as learning a new method for improving your workflow efficiency, or as profound as a change in perspective on design or interest in a new career direction.[/blockquote-nav]
+
+6 pages / 20 mins
+Nursing
 
 
-<p></p><div class="acc"> <div class="lightweight-accordion"><details><summary class="lightweight-accordion-title"><span>Describe</span></summary><div class="lightweight-accordion-body"><h3 class="red-colour">1. Describe the insight</h3>
-<p>An insight is something new that you learned or realised. The insight must be relevant to the course and ideally could change your thinking or behaviour in the future. Your insight may apply to your studies, your professional practice, or your future goals.</p>
-<p> <!-- Examples --> </p>
-<h4>Examples</h4>
-<blockquote class="style2">
-<p><em>The most important thing I realised this week is the role of questioning in project management…</em></p>
-</blockquote>
-<blockquote class="style2">
-<p><em>A reading technique that I have learned recently that I find most valuable for my study is pre-reading, especially skimming and scanning</em></p>
-</blockquote>
-<h3 class="red-colour">2. Describe the circumstances</h3>
-<p>Provide brief and relevant details of the situation from which you gained the insight. Say what was happening when this learning occurred.</p>
+6 pages / 20 mins
+Design
+
+
+6 pages / 20 mins
+
+<p>Do you agree or disagree with the following three statements? You might be surprised by the feedback!</p>
+<p class="lead">(a) Reflective writing should be objective and unemotional.</p>
+<p class="lead">(b) You should only write about the positive aspects of your learning development.</p>
+<p class="lead">(c) It is important to use lots of reference sources as evidence for your reflection.</p>
+<h3>Answers</h3>
+<p class="lead">(a) Reflective writing should be objective and unemotional.</h4>
+<p><strong>Answer:</strong> Agree.</p>
+<p><strong>Feedback:</strong> Although you are writing about yourself, your experiences and often your own feelings and responses, it should still be done in an objective and moderate tone. You need to take an analytical stance in reviewing your behaviours or learning. You should not vent your frustrations or merely describe how you felt.</p>
+
+<p class="lead">(b) You should only write about the positive aspects of your learning development.</p>
+<p><strong>Answer:</strong> Disagree.</p>
+    <strong>Feedback:</strong> Your learning journey sometimes includes points of confusion or challenge. The important thing is that you are aware of these and that you can formulate strategies to overcome difficulties. Writing honestly about negative aspects of your learning path does not reflect badly on you as a student. Rather, it shows maturity and insight.</p>
+<p class="lead">(c) It is important to use lots of reference sources as evidence for your reflection.</p>
+<p><strong>Answer:</strong> Disagree.</p>
+<p><strong>Feedback:</strong> Your lecturer may ask you to link your reflection to the literature, but a reflection does not require literature to make it valid. Whereas an essay's claims need to be supported by other sources, a reflection is about your experience or learning. The key source for that is you! Follow your lecturer's requirements, but don't crowd your reflection by including an excessive number of references.</p>
+
+
+<figure class="video">
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>Warning!</strong> Part of this video (at 0:34-0:47 seconds) has rapidly changing still images and may affect some people who are sensitive to light or motion.
+    </div>
+    <div class="responsive-video">
+        <iframe src="https://www.youtube.com/embed/videoseries?si=oYmUEungdTmIUaTL&amp;list=PLJaq64dKJZorzAv3iyn9nvxGA569H9nDH" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <div class="accordion-item transcript"></div>
+</figure>
+
+Paul Thaker 
+
+<iframe src="https://www.youtube.com/embed/EkCN6RNxlz8" frameborder="0" allowfullscreen="allowfullscreen" id="iFrameResizer3" scrolling="no" style="overflow: hidden;"></iframe>
+
+<iframe src="https://www.youtube.com/embed/UoEw3jbeqKw" frameborder="0" allowfullscreen="allowfullscreen" id="iFrameResizer2" scrolling="no" style="overflow: hidden;"></iframe>
+
+[ll-video url='https://www.youtube.com/embed/UoEw3jbeqKw' left='true']
+[transcript-accordion]<p>The work ‘70,000 veils’ has taken seven years to make. Of course, initially I didn’t have an idea what the work will look like or what will eventuate in that time. The work in terms of the process, consists of ten thousand still images taken from my travels of four or five years and then these images are taken and then deconstructed layer for layer to form ten thousand different layers, and then those layers are reconfigured and composited again to form 70,000 veils then they’re animated.</p>
+<p>What inspires the work: Rūmī, Jalāl ad-Dīn Rūmī – known as a poet in the West but he was a mystic, a Sufi mystic said, “between the individual and the divine there are 70,000 layers and none between the divine and the individual’, and this inspired me and got me thinking about not just from a metaphysical view but also from physical life. I mean you walk into the work; you can choose not to put on the 3d glasses you can choose to put them on.</p>
+<p>For me that that symbolizes life generally – you can walk through life and have a rewarding life and you would never have to think about if there is anything out there, or you can cross a threshold, a rite of passage and behind the work is all the wires and the sticky tape and the glue and the bolts and the nuts, and the wood frame and so on. Essentially, it’s the workings behind the universe, held by nails and bolts.</p>
+[/transcript-accordion]
+[/ll-video]
+
+[ll-video url='' left='true']
+[transcript-accordion]<p>Transcript content.</p>[/transcript-accordion]
+[/ll-video]
+
+[ll-video url='' left='true']
+[transcript-accordion]<p>Transcript content.</p>[/transcript-accordion]
+[/ll-video]
+
+<h2>Mind map transcripts</h2>
+Img 1
+
+<p>The image shows handwritten text, "Me as a Textile Designer", in a box in the centre. Various branches of sub-topics are handwritten around that text.</p>
+
+<p>Some of the sub-topics include:</p>
+
 <ul>
-<li>What was the context? (e.g. on placement, during reading)</li>
-<li>What was the particular trigger? (e.g. a comment from a patient, a concept in the readings, a particular question or activity in class)</li>
+    <li>Daily search</li>
+    <li>Botanicals</li>
+    <li>Guache</li>
+    <li>Pencil</li>
+    <li>Methodical</li>
+    <li>Collective goal</li>
+    <li>Collage</li>
+    <li>New technologies</li>
+    <li>Craftsmanship</li>
 </ul>
-<p> <!-- Examples --> </p>
-<h4>Examples</h4>
-<blockquote class="style2">
-<p><em>I learned this from the lecture in Project Management Techniques by a guest lecturer, Dr Strangelove. She started her presentation by asking us to build a tower from straws… I…</em></p>
-</blockquote>
-<blockquote class="style2">
-<p><em>I learned about these techniques for efficient reading from an exercise using a chapter from Anstey (2002) about the four resources model. We used the skimming technique which involves noting full details about the text and what it contains before reading it. We had to look at the whole chapter to identify the main ideas through the headings. I realised I can get a lot of information about the main ideas in a text without actually reading it.</em></p>
-</blockquote>
-</div></details></div> <div class="lightweight-accordion"><details><summary class="lightweight-accordion-title"><span>Interpret</span></summary><div class="lightweight-accordion-body"><p>After describing your insight and the circumstances, you need to discuss its meaning. Interpret what the insight means. You can:</p>
+
+
+
+Img 2
+
+<p>As above, the image shows handwritten text, "Me as a Textile Designer", in a box in the centre. Various branches of sub-topics are handwritten around that text.</p>
+<p>In this iteration, sub-topics are highlightled in different colours and linked together into groups.<p>
+
+<p>The groups are:</p>
 <ul>
-<li>explain why the insight is significant (in general but particularly to you)</li>
-<li>discuss the questions it raises (in general or for you)</li>
-<li>make connections between the insight and the course, theory or literature</li>
+    <li>Ideas and inspiration</li>
+    <li>Future</li>
+    <li>How</li>
+    <li>Value and beliefs</li>
+    <li>New approach</li>
 </ul>
-<p>Now go deeper to analyse your insight by exploring such aspects as:</p>
+
+
+
+Img 3
+
+<p>As above, the image shows handwritten text, "Me as a Textile Designer", in a box in the centre.</p>
+<p>There are five branches leading from the center, each labeled with a question.</p>
+
+<p>The branch labeled "What is your approach to design?" has the following sub-topics:</p>
+
 <ul>
-<li>What the insight might mean (in general and for you).</li>
-<li>What factors influenced, formed or informed your insight e.g.
+    <li>Color combinations</li>
+    <li>Motifs symbols (everyday things)</li>
+    <li>Personal creative dialogue</li>
+    <li>Botanicals</li>
+    <li>Nature strips</li>
+    <li>Suburban architecture</li>
+    <li>City/wildness connection</li>
+</ul>
+
+<p>The branch labeled "What inspired you?" has the following sub-topics:</p>
+
 <ul>
-<li>previous events or learning</li>
-<li>your personality type</li>
-<li>the setting or environment</li>
-<li>your relationships with people involved</li>
-</ul>
-</li>
-<li>The consequences of the insight, e.g.
+    <li>Soft forms to convey emotions</li>
+    <li>Soft structure</li>
+    <li>Mood/meaning associations</li>
+    <li>Craftsmanship/hand processes</li>
+</ul> 
+
+
+<p>The following items under "new technologies" are labelled as "processes"</p>
+
 <ul>
-<li>How does it change things?</li>
-<li>What else do you realise?</li>
-<li>Does it cause confusion, doubt or deeper understanding about previous knowledge?</li>
+    <li>Processes:</li>
+    <li>Natural fibers</li>
+    <li>Hand dyed yarns</li>
+    <li>Knitting</li>
+    <li>Experimental & fresh</li>
 </ul>
-</li>
-<li>Whether the insight is:
+
+<p>The branch labeled "What values or beliefs underpin your work?" has the following sub-topics:</p>
+
 <ul>
-<li>valid and logical</li>
-<li>transferable or relevant to other situations</li>
-<li>a new idea or an evolved understanding</li>
+    <li>Ideas energy flow</li>
+    <li>Collective goal</li>
+    <li>Enthusiasm</li>
+    <li>Full drop collective</li>
+    <li>Holistic: concept to product</li>
 </ul>
-</li>
-</ul>
-<h4>Examples</h4>
-<blockquote class="style2">
-<p><em>Understanding the importance of questions for clarification is central to my understanding of project management. This new emphasis underpins my use…</em></p>
-</blockquote>
-<blockquote class="style2">
-<p><em>Skimming and scanning a text is a very new approach to reading for me. It is not something that I had previously practised when reading in my native language. I now understand that reading quickly is not negative, but rather it is more efficient, as Anstey (2002) explains…</em></p>
-</blockquote>
-</div></details></div> <div class="lightweight-accordion"><details><summary class="lightweight-accordion-title"><span>Evaluate</span></summary><div class="lightweight-accordion-body"><p>Once you have considered the meaning of the insight, you can discuss its value. What relevance does it have? How does it benefit your:</p>
+
+<p>The branch labeled "Where do you see yourself in the future?"  has the following sub-topics:</p>
+
 <ul>
-<li>learning?</li>
-<li>coursework?</li>
-<li>future professional development?</li>
+    <li>Change in industry</li>
+    <li>Smaller considered manufacture of textiles</li>
+    <li>Australian designer/makers</li>
+    <li>Sustainable</li>
 </ul>
-<h4>Examples</h4>
-<blockquote class="style2">
-<p><em>One benefit of understanding the critical role of questioning in project management is that it might give me more confidence. This experience has changed my perception of my role as an active participant in project management and not just as a passive receiver of a brief. This changes my view of questioning government authorities. In my job as a …</em></p>
-</blockquote>
-<blockquote class="style2">
-<p><em>A significant benefit of understanding the technique of efficient reading is that I have much more confidence in locating important information in a text. Skimming and scanning a text allows me to… more effectively… I used to read every line very carefully. This made academic reading slow and burdensome and I did not always understand the main idea. Now…</em></p>
-</blockquote>
-</div></details></div> <div class="lightweight-accordion"><details><summary class="lightweight-accordion-title"><span>Plan and transfer new learning</span></summary><div class="lightweight-accordion-body"><p>Finally, say how you might apply this new insight in the future.</p>
-<p>You may use the new insight in:</p>
+
+The branch labeled "How do you work?"  has two groups of sub-topics:</p>
+
+<p>The first</p>
+
 <ul>
-<li>your current course, placement or project</li>
-<li>other courses in your degree</li>
-<li>your future work or practice</li>
-<li>your private or professional life in general</li>
+    <li>Lino</li>
+    <li>Gouache</li>
+    <li>Pencil</li>
+    <li>Ink</li>
 </ul>
-<p>You may find you need to:</p>
+
+<p>The second</p>
+
 <ul>
-<li>set behavioural or learning goals for yourself</li>
-<li>develop strategies to learn &nbsp;concepts or skills that you are unfamiliar with or find challenging</li>
+    <li>Stamp</li>
+    <li>Cut</li>
+    <li>Collage</li>
+    <li>Methodical</li>
+    <li>Constructed</li>
 </ul>
-<h4>Example</h4>
-<blockquote class="style2">
-<p><em>Clarifying the requirements of a brief is important and I will need to schedule time to identify and prepare the relevant questions early in the project timeline. </em></p>
-</blockquote>
-<blockquote class="style2">
-<p><em>My new understanding of a technique for efficient reading will be important for me in many areas – in this course, in the Bachelor of Education degree, for my future primary teaching career, and in my life generally. Pre-reading, especially skimming and scanning, is an efficient way to approach a new text in this Teaching Reading course and for all the other subjects in my degree. In my professional development as a primary school teacher I will need to keep up with theory and developments throughout my career so I need to be observant when I approach new texts to identify the useful studies… Finally, applying efficient pre-reading skills will enable me to make better judgements about what to read and how to locate the main ideas and specific information in any material I need for effective participation in society.</em></p>
-</blockquote>
-</div></details></div> <p></p></div><p></p>
-			<nav class="btn-nav-container" aria-label="Previous and next links">
 
-    <a class="btn btn-nav-prev" href="https://ll-style.blackaeonium.net/assessments/reflective-writing-1/"><span class="visually-hidden">Previous: </span>Reflective writing</a>
+Img 4
 
+<p>This image refines the previous image, it still has the handwritten text, "Me as a Textile Designer", in a box in the centre. There are five branches leading from the center, each labeled with a question. Each branch has a list of sub-topics and a label underneath.</p>
 
-<a class="btn btn-nav-next" href="https://ll-style.blackaeonium.net/assessments/reflective-writing-1/sample-reflection/"><span class="visually-hidden">Next: </span>Sample reflection</a>
-</nav><!-- .navigation -->			
+<p>The branch labeled "What is your approach to design?" has the label "DAILY SEARCH & CREATIVITy". The following sub-topics are also diaplayed:</p>
 
+<ul>
+    <li>Color combinations</li>
+    <li>Motifs symbols (everyday things)</li>
+    <li>Personal creative dialogue</li>
+    <li>Botanicals</li>
+    <li>Nature strips</li>
+    <li>Suburban architecture</li>
+    <li>City/wildness connection</li>
+</ul>
 
+<p>The branch labeled "What inspired you?" has the label "INTEREST IN PERSONAL NARRATIVE". The following sub-topics are also diaplayed:</p>
 
-<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+<ul>
+    <li>Soft forms to convey emotions</li>
+    <li>Soft structure</li>
+    <li>Mood/meaning associations</li>
+    <li>Craftsmanship/hand processes</li>
+</ul> 
 
-<div class="keywords">
-    <h2 class="h5">Keywords</h2>
-    <ul>
-                <li><a href="https://ll-style.blackaeonium.net/keyword/diep/">DIEP</a></li>  
-                <li><a href="https://ll-style.blackaeonium.net/keyword/reflective-writing/">Reflective writing</a></li>  
-        </ul>
-</div>
- 
-<!-- keywords echo end 
+<p>The following items under "new technologies" are labelled as "processes"</p>
 
-<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
-<!--
-<p><strong>Subjects </strong>
-    | <strong><a href="https://ll-style.blackaeonium.net/subject-area/assessments/">Assessments</a></strong>  
-    </p>
--->
-<!-- category echo end -->
+<ul>
+    <li>Processes:</li>
+    <li>Natural fibers</li>
+    <li>Hand dyed yarns</li>
+    <li>Knitting</li>
+    <li>Experimental & fresh</li>
+</ul>
 
+<p>The branch labeled "What values or beliefs underpin your work?" has the label "COLLABORATION". The following sub-topics are also diaplayed:</p>
+
+<ul>
+    <li>Ideas energy flow</li>
+    <li>Collective goal</li>
+    <li>Enthusiasm</li>
+    <li>Full drop collective</li>
+    <li>Holistic: concept to product</li>
+</ul>
+
+<p>The branch labeled "Where do you see yourself in the future?" has the label "HUMAN & RELATABLE". The following sub-topics are also diaplayed:</p>
+
+<ul>
+    <li>Change in industry</li>
+    <li>Smaller considered manufacture of textiles</li>
+    <li>Australian designer/makers</li>
+    <li>Sustainable</li>
+</ul>
+
+<p>The branch labeled "How do you work?"  has the label "SMALL BUSINESS". </p>
+<p> It has two groups of sub-topics:</p>
+
+<p>The first</p>
+
+<ul>
+    <li>Lino</li>
+    <li>Gouache</li>
+    <li>Pencil</li>
+    <li>Ink</li>
+</ul>
+
+<p>The second</p>
+
+<ul>
+    <li>Stamp</li>
+    <li>Cut</li>
+    <li>Collage</li>
+    <li>Methodical</li>
+    <li>Constructed</li>
+</ul>
 
 
 
