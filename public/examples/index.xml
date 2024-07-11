@@ -2,31 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on Hugo wodpress</title>
-    <link>http://localhost:51225/examples/</link>
+    <link>http://localhost:49905/examples/</link>
     <description>Recent content in Examples on Hugo wodpress</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <atom:link href="http://localhost:51225/examples/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49905/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example 2</title>
-      <link>http://localhost:51225/examples/example-1/</link>
+      <link>http://localhost:49905/examples/example-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51225/examples/example-1/</guid>
+      <guid>http://localhost:49905/examples/example-1/</guid>
       <description>Home Referencing Topic sentences A well-written paragraph contains a topic sentence. A topic sentence controls the main idea discussed in a paragraph. It provides the reader with a summary of the key idea and the point of view the writer is expressing. It is often the first sentence as it acts as an introduction to what follows, making it easier for the reader to follow.&#xA;Transcript‘he loves me he loves me not’ is written 21,319 times which represents the number of days I have lived and asked this question.</description>
     </item>
     <item>
       <title>Example 2</title>
-      <link>http://localhost:51225/examples/example-2/</link>
+      <link>http://localhost:49905/examples/example-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51225/examples/example-2/</guid>
+      <guid>http://localhost:49905/examples/example-2/</guid>
       <description>Home Referencing Quoting When you are researching a topic, sometimes you want to include the exact words of another author or speaker in your own work. Using someone’s words in their original form is called quoting, or including a direct quote.&#xA;When to quote Quoting is the way to include the exact words of others in our own work. You might want to use a quote when the specific words that an author or speaker has used are important, such as when someone offers a new definition for a term or presents a new theory.</description>
     </item>
     <item>
       <title>Example 3</title>
-      <link>http://localhost:51225/examples/example-3/</link>
+      <link>http://localhost:49905/examples/example-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51225/examples/example-3/</guid>
+      <guid>http://localhost:49905/examples/example-3/</guid>
       <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Integrating ideas with reporting words Not all information is created equal.&#xA;When you choose information for your assignments, there should be a continual evaluation process occurring. Evaluate information for its relevance and usefulness to your work, and its quality.&#xA;Not all information that is published is credible and reliable, especially if you find that information on the web.</description>
+    </item>
+    <item>
+      <title>Example 4</title>
+      <link>http://localhost:49905/examples/example-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:49905/examples/example-4/</guid>
+      <description>HomeAssessmentsReflective writing&#x9;How to use DIEP (Describe Interpret Evaluate Plan) Use the DIEP process to guide your reflective writing and help you stay focused and on task.&#xA;[bs-accordion title=&#34;Purpose (why are you writing the task?)&#34; open=&#34;true&#34;] Essay To present a well-argued response to a question or proposition, using analysis and discussion of relevant literature To establish a proposition (thesis) Report To investigate and analyse an issue and present information thoroughly and logically Often to recommend action to solve a problem Usually, to make proposals Reflective writing To record the development of your ideas and insights and the possible implications for practice To reflect on the content of the subject and on your own learning To identify and discuss your responses to concepts/issues in course work, reading, and/or practical placement, etc.</description>
+    </item>
+    <item>
+      <title>Example 5</title>
+      <link>http://localhost:49905/examples/example-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:49905/examples/example-5/</guid>
+      <description>HomeAssessmentsReflective writing&#x9;How to use DIEP (Describe Interpret Evaluate Plan) Sequence First, firstly, second, third, thirdly next, last finally in addition, moreover furthermore also In conclusion, to summarise The first... The/a second One... Another... An additional... Addition In addition Furthermore Also and as well as Cause For because since as because of to cause Effect So as a result as a consequence therefore thus consequently hence to result from due to as a result/consequence of to result in to affect Emphasis Undoubtedly Indeed Obviously Generally Admittedly In theory/fact Particularly Especially Clearly Comparison Similarly Likewise Also Too as just as and like just like similar to be similar to/ the same as be alike not only.</description>
     </item>
   </channel>
 </rss>

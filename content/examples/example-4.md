@@ -1,6 +1,6 @@
 ---
-title: Example 3
-name: Example 3
+title: Example 4
+name: Example 4
 parent: "Examples"
 ---
 <nav aria-label="breadcrumbs"><ul class="breadcrumbs"><li><a href="/">Home</a></li><li><a href="/assessments">Assessments</a></li><li><a href="/reflective-writing-1">Reflective writing</a></li></ul></nav>			            <a id="main-content"></a>
@@ -214,7 +214,6 @@ Img 2
 
 <p>As above, the image shows handwritten text, "Me as a Textile Designer", in a box in the centre. Various branches of sub-topics are handwritten around that text.</p>
 <p>In this iteration, sub-topics are highlightled in different colours and linked together into groups.<p>
-
 <p>The groups are:</p>
 <ul>
     <li>Ideas and inspiration</li>
@@ -230,9 +229,7 @@ Img 3
 
 <p>As above, the image shows handwritten text, "Me as a Textile Designer", in a box in the centre.</p>
 <p>There are five branches leading from the center, each labeled with a question.</p>
-
 <p>The branch labeled "What is your approach to design?" has the following sub-topics:</p>
-
 <ul>
     <li>Color combinations</li>
     <li>Motifs symbols (everyday things)</li>
@@ -242,27 +239,21 @@ Img 3
     <li>Suburban architecture</li>
     <li>City/wildness connection</li>
 </ul>
-
 <p>The branch labeled "What inspired you?" has the following sub-topics:</p>
-
 <ul>
     <li>Soft forms to convey emotions</li>
     <li>Soft structure</li>
     <li>Mood/meaning associations</li>
     <li>Craftsmanship/hand processes</li>
 </ul> 
-
-
 <p>The following items under "new technologies" are labelled as "processes"</p>
-
 <ul>
     <li>Processes:</li>
     <li>Natural fibers</li>
     <li>Hand dyed yarns</li>
     <li>Knitting</li>
-    <li>Experimental & fresh</li>
+    <li>Experimental &amp; fresh</li>
 </ul>
-
 <p>The branch labeled "What values or beliefs underpin your work?" has the following sub-topics:</p>
 
 <ul>
@@ -272,29 +263,22 @@ Img 3
     <li>Full drop collective</li>
     <li>Holistic: concept to product</li>
 </ul>
-
 <p>The branch labeled "Where do you see yourself in the future?"  has the following sub-topics:</p>
-
 <ul>
     <li>Change in industry</li>
     <li>Smaller considered manufacture of textiles</li>
     <li>Australian designer/makers</li>
     <li>Sustainable</li>
 </ul>
-
-The branch labeled "How do you work?"  has two groups of sub-topics:</p>
-
+<p>The branch labeled "How do you work?"  has two groups of sub-topics:</p>
 <p>The first</p>
-
 <ul>
     <li>Lino</li>
     <li>Gouache</li>
     <li>Pencil</li>
     <li>Ink</li>
 </ul>
-
 <p>The second</p>
-
 <ul>
     <li>Stamp</li>
     <li>Cut</li>
@@ -306,9 +290,7 @@ The branch labeled "How do you work?"  has two groups of sub-topics:</p>
 Img 4
 
 <p>This image refines the previous image, it still has the handwritten text, "Me as a Textile Designer", in a box in the centre. There are five branches leading from the center, each labeled with a question. Each branch has a list of sub-topics and a label underneath.</p>
-
 <p>The branch labeled "What is your approach to design?" has the label "DAILY SEARCH & CREATIVITy". The following sub-topics are also diaplayed:</p>
-
 <ul>
     <li>Color combinations</li>
     <li>Motifs symbols (everyday things)</li>
@@ -318,28 +300,22 @@ Img 4
     <li>Suburban architecture</li>
     <li>City/wildness connection</li>
 </ul>
-
 <p>The branch labeled "What inspired you?" has the label "INTEREST IN PERSONAL NARRATIVE". The following sub-topics are also diaplayed:</p>
-
 <ul>
     <li>Soft forms to convey emotions</li>
     <li>Soft structure</li>
     <li>Mood/meaning associations</li>
     <li>Craftsmanship/hand processes</li>
 </ul> 
-
 <p>The following items under "new technologies" are labelled as "processes"</p>
-
 <ul>
     <li>Processes:</li>
     <li>Natural fibers</li>
     <li>Hand dyed yarns</li>
     <li>Knitting</li>
-    <li>Experimental & fresh</li>
+    <li>Experimental &amp; fresh</li>
 </ul>
-
 <p>The branch labeled "What values or beliefs underpin your work?" has the label "COLLABORATION". The following sub-topics are also diaplayed:</p>
-
 <ul>
     <li>Ideas energy flow</li>
     <li>Collective goal</li>
@@ -347,30 +323,23 @@ Img 4
     <li>Full drop collective</li>
     <li>Holistic: concept to product</li>
 </ul>
-
 <p>The branch labeled "Where do you see yourself in the future?" has the label "HUMAN & RELATABLE". The following sub-topics are also diaplayed:</p>
-
 <ul>
     <li>Change in industry</li>
     <li>Smaller considered manufacture of textiles</li>
     <li>Australian designer/makers</li>
     <li>Sustainable</li>
 </ul>
-
 <p>The branch labeled "How do you work?"  has the label "SMALL BUSINESS". </p>
 <p> It has two groups of sub-topics:</p>
-
 <p>The first</p>
-
 <ul>
     <li>Lino</li>
     <li>Gouache</li>
     <li>Pencil</li>
     <li>Ink</li>
 </ul>
-
 <p>The second</p>
-
 <ul>
     <li>Stamp</li>
     <li>Cut</li>
@@ -378,6 +347,12 @@ Img 4
     <li>Methodical</li>
     <li>Constructed</li>
 </ul>
+
+<p>All sentences in a paragraph need to relate to the main idea in the topic sentence. The reader should be able to see how each sentence flows from the previous one and how each is connected to the topic sentence. Linking words and phrases weave sentences together to create a cohesive paragraph.</p>
+<h2>Linking words and phrases</h2>
+<style> .row td { width: 50% } </style>
+
+
 
 
 
