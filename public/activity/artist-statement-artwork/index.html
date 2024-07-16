@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-AU">
-<head>
-    <!-- meta partial contains charset, viewport, seo etc. -->
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
     <link rel="stylesheet" href="https://rmitlibrary.github.io/wordpress-hugo-learning-lab/wp-content/themes/picostrap5-child-base/css-output/bundle.min.css">
 	<style>
 	.my-container {
@@ -21,17 +21,46 @@
 	</style>
 </head>
 <body>
-{{ .Content }}
+<!-- START container -->
+<div class="my-container">
+	<blockquote>
+		<a id="mark-up-content"></a>
+		<p><strong>Steven Rendall<br />Recent Developments I, 2018</strong></p>
+		<p><span id="what">This is one of 3 works titled Recent Developments: In making these works I was trying to mesh personal conditions and interests to requirements of contemporary painting.</span> <span id="context"> This obviously set up a vast array of problems, discrepancies and diversions. The way through this was to hold on to the idea that these paintings could be images of demons. In many cultures a demon is a hybridised creature made up from the components of other creatures – a kind of horrifically meshed collage. In some instances, even a demon’s voice is multitudinous: “My name is Legion: for we are many’. </span> <span id="how">The lack of an identifiable singular self that the demon has (for we are many) relates to the method of assembling these paintings from disparate voices, more specifically, the paintings are made from images extracted from art market auction house catalogues.</span> <span id="rationale"> This compromised authorship sets up strange correspondences with the demon’s: we are many. There’s a kind of horror in this – a dismantling of authorship that I still don’t understand. It’s not post-modern pastiche but I’m not sure exactly what it is.</span></p>
+		<figure class="caption-side">
+			<div class="img-caption-wrap">
+				<div class="portrait">
+					<img src="https://rmitlibrary.github.io/cdn/learninglab/activities/sites/default/files/1474StevenRendallImage1.jpg" alt="Comprised of several slices of other paintings. Figurative elements almost resolve, but don't." />
+				</div>
+				<figcaption>Steven Rendall<br />
+				Recent Developments I, 2018<br />
+				Artwork Acc RMIT.2018.28<br />
+				Oil and acrylic on linen 183 x 153cm<br />
+				RMIT University Collection<br />
+				&copy; Copyright Steven Rendall</figcaption>
+			</div>
+		</figure>
+	</blockquote>
+	<div class="button-group" id="button-group">
+		<p><strong>Click the buttons</strong> to highlight the structure and different parts of the text above.</p>
+		<a class="btn btn-default text-markup-btn" role="button" href="#what">What is the format of the work?</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#context">Context, methods and problem solving</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#how">How is the work created?</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#rationale">Rationale, exploration of the theme</a>
+		<a class="btn btn-default" role="button" id="showHideAll" href="#mark-up-content">Show all</a>
+	</div>
+</div>
+<!-- END container -->
 <script>
 
-//bool determines whether highlights are shown, used to toggle showAll button
+
 var highlightHidden = true;	
 var showHideAll = document.getElementById("showHideAll");
 
-//Build accessible "back to buttons" link, to be inserted at the end of the span when highlighted
+
 var linkHTML = ' <a href="#button-group" class="visually-hidden">Back to buttons</a>';
 	
-// Declare array of colours
+
 var colArray = [
 "color-teal",
 "color-pink",
@@ -43,65 +72,65 @@ var colArray = [
 "color-yellow"
 ];
 
-// Select all elements with the class "text-markup-btn"
+
 var elements = document.getElementsByClassName("text-markup-btn");
 	
-// Iterate over each "text-markup-btn" and add an event listener, "handleClick"
+
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", function(event) {
         handleClick(event.target, i);
     });
 }
 	
-// When a button is clicked, reset all text highlight
-// then call "highlightText" passing in the button and it's index
+
+
 function handleClick(button, index) {
     resetAllTextHighlights();
 	highlightText(button, index);	
 }
 	
-// Remove all color classes
+
 function resetAllTextHighlights()
 {
-	//get all the spans in a blockquote
+	
 	var blockquote = document.querySelector('blockquote');
 	var spans = blockquote.querySelectorAll('span');
 	
-	//remove all classes
+	
 	spans.forEach(function(span) {
 		removeClasses(span);
 	});
 	
-	//get all the buttons of type text-markup-btn
+	
 	var elements = document.querySelectorAll(".text-markup-btn");
 	
-	//remove all classes, except for button ones
+	
 	elements.forEach(function(element) {
 		removeClasses(element);
 	});
 }
 	
-// Highlight the text and the button by adding a class from colArray,
-// also add in a back to buttons link for screen readers.
+
+
 function highlightText(button, index)
 {
-	// Get the span tag of the text we wnat to highlight from its href
+	
 	var theTextId = button.getAttribute('href').substring(1);
 	var theText = document.getElementById(theTextId);
 	
-	// grab the next colour in the colourArray 
-	// (will loop around if we have move text items than colours)
+	
+	
 	var colIndex = getColour(index);
 	
-	// add the classes to the theText and the button to show the highlight
+	
 	theText.classList.add(colArray[colIndex]);
 	button.classList.add(colArray[colIndex]);
 	
-	// add in a back to content link at the end of theText
+	
 	theText.insertAdjacentHTML('beforeend', linkHTML);
 }
 	
-// Grab colour class from array, wrap around if required
+
 function getColour(index) {
 	if(index >= colArray.length) {
 		return (index - colArray.length);
@@ -111,11 +140,11 @@ function getColour(index) {
 	}
 }
 	
-//Remove any colour classes present, keep the button classes used to style buttons
+
 function removeClasses(element)
 {
 	var classesToKeep = ['btn', 'btn-default', 'text-markup-btn'];
-    // Iterate over the class list and remove classes that are not in the classesToKeep array
+    
     element.classList.forEach(function(className) {
         if (!classesToKeep.includes(className)) {
             element.classList.remove(className);
@@ -123,16 +152,16 @@ function removeClasses(element)
     });
 }
 	
-//Loop through all the buttons, and then call "highlightText on each one
+
 function highlightAll() {
 	var elements = document.getElementsByClassName("text-markup-btn");
-	// Iterate over each element and add an event listener
+	
 	for (let i = 0; i < elements.length; i++) {
 		highlightText(elements[i], i);
 	}	
 }
 	
-//add event listener to showAll button, call highlightAll function
+
 showHideAll.addEventListener("click", function(event) {
 	if(highlightHidden) {
 		highlightHidden = false;
@@ -147,9 +176,9 @@ showHideAll.addEventListener("click", function(event) {
 	}
 });
 </script>					
-<!-- Iframe resizer --> 
+ 
 <script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script> 
-<!-- end Iframe resizer --> 
+ 
 </body>
 </html>

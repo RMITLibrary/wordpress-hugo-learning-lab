@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-AU">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <link rel="stylesheet" href="https://rmitlibrary.github.io/wordpress-hugo-learning-lab/wp-content/themes/picostrap5-child-base/css-output/bundle.min.css">
+	<style>
+	.my-container {
+		max-width: 856px; 
+	}
+	.button-group .text-markup-btn, #showHideAll {
+		margin-bottom: 1rem;
+	}
+	
+	@media (max-width: 767.98px) {
+	  .button-group .text-markup-btn, 
+	  .button-group #showHideAll {
+		display: block;
+		width: 100%;
+	  }
+	}
+	</style>
+</head>
+<body>
+<!-- START container -->
+<div class="my-container">
+	<blockquote>
+		<a id="mark-up-content"></a>
+		<p><strong>Steven Rendall<br />Recent Developments I, 2018</strong></p>
+		<p><span class="what">This is one of 3 works titled Recent Developments: In making these works I was trying to mesh personal conditions and interests to requirements of contemporary painting.</span> <span id="context"> This obviously set up a vast array of problems, discrepancies and diversions. The way through this was to hold on to the idea that these paintings could be images of demons. In many cultures a demon is a hybridised creature made up from the components of other creatures – a kind of horrifically meshed collage. In some instances, even a demon’s voice is multitudinous: “My name is Legion: for we are many’. </span> <span id="how">The lack of an identifiable singular self that the demon has (for we are many) relates to the method of assembling these paintings from disparate voices, more specifically, the paintings are made from images extracted from art market auction house catalogues.</span> <span id="rationale"> This compromised authorship sets up strange correspondences with the demon’s: we are many. There’s a kind of horror in this – a dismantling of authorship that I still don’t understand. It’s not post-modern pastiche but I’m not sure exactly what it is.</span></p>
+		<figure class="caption-side">
+			<div class="img-caption-wrap">
+				<div class="portrait">
+					<img src="https://rmitlibrary.github.io/cdn/learninglab/activities/sites/default/files/1474StevenRendallImage1.jpg" alt="Comprised of several slices of other paintings. Figurative elements almost resolve, but don't." />
+				</div>
+				<figcaption>Steven Rendall<br />
+				Recent Developments I, 2018<br />
+				Artwork Acc RMIT.2018.28<br />
+				Oil and acrylic on linen 183 x 153cm<br />
+				RMIT University Collection<br />
+				&copy; Copyright Steven Rendall</figcaption>
+			</div>
+		</figure>
+	</blockquote>
+	<div class="button-group" id="button-group">
+		<p><strong>Click the buttons</strong> to highlight the structure and different parts of the text above.</p>
+		<a class="btn btn-default text-markup-btn" role="button" href="#what">What is the format of the work??</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#context">Context, methods and problem solving</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#how">How is the work created?</a>
+		<a class="btn btn-default text-markup-btn" role="button" href="#rationale">Rationale, exploration of the theme</a>
+		<a class="btn btn-default" role="button" id="showHideAll" href="#mark-up-content">Show all</a>
+	</div>
+<pre><code>&lt;p style=&quot;margin-left: 40px;&quot;&gt;
+		  &lt;button class=&quot;btn btn-default btn-xs&quot; id=&quot;what_btn&quot;&gt;&lt;/button&gt;
+		  &lt;button class=&quot;btn btn-default btn-xs&quot; id=&quot;context_btn&quot;&gt;&lt;/button&gt;
+		  &lt;button class=&quot;btn btn-default btn-xs&quot; id=&quot;how_btn&quot;&gt;&lt;/button&gt;&lt;br&gt;
+		  &lt;button class=&quot;btn btn-default btn-xs color4-h color4 color4-b&quot; id=&quot;rationale_btn&quot;&gt;&lt;/button&gt;
+			&lt;button class=&quot;btn btn-default&quot; id=&quot;show_btn&quot;&gt;Show all&lt;/button&gt;
+		&lt;/p&gt;
+</code></pre>
+</div>
+<!-- END container -->
+<script>
+
+
+var highlightHidden = true;	
+var showHideAll = document.getElementById("showHideAll");
+
+
+var linkHTML = ' <a href="#button-group" class="visually-hidden">Back to buttons</a>';
+	
+
+var colArray = [
+"color-teal",
+"color-pink",
+"color-green",
+"color-purple",
+"color-brown",
+"color-blue",
+"color-red",
+"color-yellow"
+];
+
+
+var elements = document.getElementsByClassName("text-markup-btn");
+	
+
+for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", function(event) {
+        handleClick(event.target, i);
+    });
+}
+	
+
+
+function handleClick(button, index) {
+    resetAllTextHighlights();
+	highlightText(button, index);	
+}
+	
+
+function resetAllTextHighlights()
+{
+	
+	var blockquote = document.querySelector('blockquote');
+	var spans = blockquote.querySelectorAll('span');
+	
+	
+	spans.forEach(function(span) {
+		removeClasses(span);
+	});
+	
+	
+	var elements = document.querySelectorAll(".text-markup-btn");
+	
+	
+	elements.forEach(function(element) {
+		removeClasses(element);
+	});
+}
+	
+
+
+function highlightText(button, index)
+{
+	
+	var theTextId = button.getAttribute('href').substring(1);
+	var theText = document.getElementById(theTextId);
+	
+	
+	
+	var colIndex = getColour(index);
+	
+	
+	theText.classList.add(colArray[colIndex]);
+	button.classList.add(colArray[colIndex]);
+	
+	
+	theText.insertAdjacentHTML('beforeend', linkHTML);
+}
+	
+
+function getColour(index) {
+	if(index >= colArray.length) {
+		return (index - colArray.length);
+	}
+	else {
+		return index;
+	}
+}
+	
+
+function removeClasses(element)
+{
+	var classesToKeep = ['btn', 'btn-default', 'text-markup-btn'];
+    
+    element.classList.forEach(function(className) {
+        if (!classesToKeep.includes(className)) {
+            element.classList.remove(className);
+        }
+    });
+}
+	
+
+function highlightAll() {
+	var elements = document.getElementsByClassName("text-markup-btn");
+	
+	for (let i = 0; i < elements.length; i++) {
+		highlightText(elements[i], i);
+	}	
+}
+	
+
+showHideAll.addEventListener("click", function(event) {
+	if(highlightHidden) {
+		highlightHidden = false;
+		showHideAll.innerHTML = "Hide all";
+		highlightAll();
+	}
+	else {
+		
+		showHideAll.innerHTML = "Show all";
+		resetAllTextHighlights();
+		highlightHidden = true;
+	}
+});
+</script>					
+ 
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script> 
+ 
+</body>
+</html>

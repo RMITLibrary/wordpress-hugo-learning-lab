@@ -15,6 +15,13 @@
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum semper elit, non dignissim dolor iaculis sed. Fusce gravida, turpis at pulvinar feugiat, elit tortor convallis urna, sit amet sollicitudin augue ex a velit. Curabitur varius sapien ligula, sit amet porta sapien cursus ac.&#xA;An example caption for this image. This is a title How do I write an essay introduction? Writing an essay introduction can sometimes be quite challenging. It helps to break down your introduction into three important parts: First, start by introducing your topic.</description>
     </item>
     <item>
+      <title>Activity</title>
+      <link>http://localhost:1313/activity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/activity/</guid>
+      <description>@gun_shy_design&#xA;#texturalintercourse&#xA;Mixed media installation&#xA;RMIT University Gallery&#xA;#texturalintercourse is a magnificent, OTT, tongue in cheek, contemporary, psychedelic, psycho-sexual journey. A pop subversion exploring fetish in the everyday normality of life. It’s a mad world out there&amp;hellip; Who knows what’s really on people’s minds or behind closed doors?&amp;hellip; Interact with our piece and hashtag #texturalintercourse lovers.&#xA;Thanks to @honchodisko and all the beauties at the 200th Birthday who wrote on our toilet wall lining.</description>
+    </item>
+    <item>
       <title>Example 1</title>
       <link>http://localhost:1313/example-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -47,7 +54,7 @@
       <link>http://localhost:1313/examples/example-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/example-4/</guid>
-      <description>HomeAssessmentsReflective writing&#x9;Test Yourself: Sustainable Development Goals quiz A reflective blog: an academic reflection in four paragraphs (from Master of Project Management)&#xA;Accessible footnotes with CSS Maintaining footnotes manually can be a pain. By using CSS counters to add the numbered references in the text and an ordered list to display the actual footnotes in the footer, it becomes extremely easy.&#xA;Footnotes Footnotes are notes placed at the bottom of a page.</description>
+      <description>Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
     </item>
     <item>
       <title>Example 5</title>

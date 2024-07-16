@@ -33,7 +33,7 @@
       <link>http://localhost:1313/examples/example-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/example-4/</guid>
-      <description>HomeAssessmentsReflective writing&#x9;Test Yourself: Sustainable Development Goals quiz View the different structural parts of each example across a number of artists working in different mediums and media.&#xA;Short artist statement - 47 words A short artist statement which captures the visual style and impact of this creative work in an informal yet bold text.&#xA;@gun_shy_design&#xA;#texturalintercourse&#xA;Mixed media installation&#xA;RMIT University Gallery&#xA;#texturalintercourse is a magnificent, OTT, tongue in cheek, contemporary, psychedelic, psycho-sexual journey.</description>
+      <description>Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
     </item>
     <item>
       <title>Example 5</title>

@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/sandbox/</loc>
   </url><url>
+    <loc>http://localhost:1313/activity/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/example-1/</loc>
