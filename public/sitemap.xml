@@ -6,6 +6,8 @@
   </url><url>
     <loc>http://localhost:1313/activity/</loc>
   </url><url>
+    <loc>http://localhost:1313/activity/artist-statement-artwork/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/example-1/</loc>
@@ -27,6 +29,10 @@
     <loc>http://localhost:1313/home/</loc>
   </url><url>
     <loc>http://localhost:1313/landing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/activity/short-artist-statement/</loc>
+  </url><url>
+    <loc>http://localhost:1313/activity/short-artist-statement-video/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

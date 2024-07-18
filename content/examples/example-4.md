@@ -4,6 +4,12 @@ name: Example 4
 parent: "Examples"
 ---
 <!-- START Blockquote nav shortcode -->
+<div class="highlight">
+<pre class="chroma"><code class="language-html hljs language-xml" data-highlighted="yes"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>  
+	<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Content goes here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></code>
+</pre></div>
+
 <section>
 	<h2>Blockquote Navigation Shortcode</h2>
 	<p>Creates a linked blockquote with options for category, extra-info and icon</p>
@@ -24,7 +30,16 @@ parent: "Examples"
 <pre class="chroma">
 <code class="language-html">&lt;button class=&quot;btn btn-primary&quot; &gt;Primary button&lt;/button&gt;</code>
 </pre></div>
-<div class="highlight"><pre class="chroma"><pre><code>[blockquote-nav category='Category' link='/cohesion' title='This is the title' extra-info='Extra information' icon='https://path.to/icon.svg']This is the blockquote content.[/blockquote-nav]</code></pre></div>
+<div class="highlight"><pre class="chroma">
+<code>[blockquote-nav 
+category='Category' 
+link='/cohesion' 
+title='This is the title' 
+extra-info='Extra information' 
+icon='https://path.to/icon.svg']
+This is the blockquote content.
+[/blockquote-nav]
+</code></pre></div>
 	<h3>Expected Output:</h3>
 	<blockquote class="complex">
 		<a href="mylink">
