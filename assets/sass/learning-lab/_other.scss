@@ -23,3 +23,20 @@
         grid-template-columns: 1fr 1fr 1fr 1fr; 
     }
 }
+
+aside.visually-hidden-focusable div {
+    padding: 16px 24px;
+    
+    @include do-space(margin-top, sm);
+    @include do-space(margin-bottom, sm);
+    
+    border: 2px solid $red;
+    
+    & > :first-child {
+        margin-top: 0;
+    }
+    
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
