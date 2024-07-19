@@ -54,7 +54,7 @@
       <link>http://localhost:1313/examples/example-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/example-4/</guid>
-      <description>Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
+      <description>&amp;lt;blockquote&amp;gt; &amp;lt;p&amp;gt;Content goes here.&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt; Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
     </item>
     <item>
       <title>Example 5</title>
@@ -76,20 +76,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/landing/</guid>
       <description>Home /Assignments /Getting started with assignments /Researching your assignment BLergh Whether you are paraphrasing or quoting, integrating the ideas of others with your own argument is an important part of clear, cohesive communication. It’s easy to become repetitive, using ‘this author said’ and ‘that author said’ over and over. Reporting words tell your audience more about a person’s position on a topic, not just that they ‘said’ something.&#xA;Reporting words Reporting words are verbs that help us describe an author’s position on a topic.</description>
-    </item>
-    <item>
-      <title>Short Artist Statement</title>
-      <link>http://localhost:1313/activity/short-artist-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/activity/short-artist-statement/</guid>
-      <description>@gun_shy_design&#xA;#texturalintercourse&#xA;Mixed media installation&#xA;RMIT University Gallery&#xA;#texturalintercourse is a magnificent, OTT, tongue in cheek, contemporary, psychedelic, psycho-sexual journey. A pop subversion exploring fetish in the everyday normality of life. It’s a mad world out there&amp;hellip; Who knows what’s really on people’s minds or behind closed doors?&amp;hellip; Interact with our piece and hashtag #texturalintercourse lovers.&#xA;Thanks to @honchodisko and all the beauties at the 200th Birthday who wrote on our toilet wall lining.</description>
-    </item>
-    <item>
-      <title>Short Artist Statement Video</title>
-      <link>http://localhost:1313/activity/short-artist-statement-video/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/activity/short-artist-statement-video/</guid>
-      <description>Keith W Clancy&#xA;BLACK WHOLE (RMX), 2019&#xA;RMIT University Gallery&#xA;BLACK WHOLE (RMX) restages an imaginary cabaret performed by an unidentified Officer: he is at once a ghost, a dream and a traumatic symptom.&#xA;Richard Strauss’s opera Ariadne auf Naxos (1916) acts as a self-nesting framework for this meta-fictional allegory about art, sex, death and childhood. Against the silent commentary of old master paintings, arias by Handel and Vivaldi are ‘mistranslated’ by texts adapted from Octave Mirbeau’s ‘The Torture Garden’ (1899).</description>
     </item>
   </channel>
 </rss>
