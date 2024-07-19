@@ -1,0 +1,16 @@
+.highlight {
+    @include do-space(margin-top, lg); 
+    @include do-space(margin-bottom, lg); 
+	
+	background-color: $underlay-grey;
+	
+	padding: 1rem;
+}
+
+.hljs-string {
+	color: $red;
+}
+
+pre {
+    margin: 0;
+}
