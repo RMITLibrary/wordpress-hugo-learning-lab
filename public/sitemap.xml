@@ -28,6 +28,8 @@
   </url><url>
     <loc>http://localhost:1313/home/</loc>
   </url><url>
+    <loc>http://localhost:1313/examples/images/</loc>
+  </url><url>
     <loc>http://localhost:1313/landing/</loc>
   </url><url>
     <loc>http://localhost:1313/activity/short-artist-statement/</loc>

@@ -4,7 +4,158 @@ $img-width-md: 25rem;       //400px
 $img-width-sm: 18.5rem;     //296px
 
 
-/* Figures are centred, limit to 40rem width by default*/
+figure {
+    @include do-space(margin-top, lg); 
+    @include do-space(margin-bottom, lg); 
+    
+    width: 100%;
+    max-width: $img-width-lg;
+	
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	//figcaption rules
+	figcaption {
+		@include type-small;
+		margin-top: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+	
+	
+	//apply classes to figure, which effect image below
+	//eg <figure class="border"><img /></figure>
+	
+
+	// --- START image sizing
+	
+	&.wide {
+		max-width: $img-width-xl;
+	}
+	
+	//are these image names right?
+	&.img-width- {
+		&lg {
+			max-width: $img-width-lg;
+		}
+
+		&md {
+			max-width: $img-width-md;
+		}
+
+		&sm {
+			max-width: $img-width-sm;
+		}
+	}
+	// --- END image sizing
+	
+	
+	// --- START portrait images
+	
+	//for screens > 768px, show image and caption side by side
+	&.portrait, &.portrait-small {
+		max-width: $img-width-xl;	
+		
+		@include media-breakpoint-up(md) { 
+
+			.image-caption-wrapper {
+				display: flex;
+				align-items: flex-end;
+				gap: 1.5rem;
+				
+				img {
+					max-width: $img-width-md;
+				}
+				
+				figcaption {
+					margin: 0;
+				}
+			}		
+		} 
+	}
+	
+	//portrait small
+	&.portrait-small {
+		@include media-breakpoint-up(md) { 
+			.image-caption-wrapper img {
+					max-width: $img-width-sm;
+			}				
+		} 
+	}
+	
+	// --- END portrait images
+	
+	
+	// --- START effects on image, border, drop-shadow, rounded corners
+	
+	//add a border
+	&.my-border {
+		img {
+			box-sizing: border-box;
+			border: 1px solid $interface-grey;
+		}
+	}
+	
+	
+	//add a drop-shadow
+	&.drop-shadow {
+		img {
+			box-sizing: border-box;
+			box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.10);
+		}
+		
+		//add more margin on top to cope with drop shadow
+		figcaption { margin-top: 0.5rem; }
+	}
+	
+	//add rounded corners
+	&.round-corners {
+		img {
+			border-radius: 0.5rem;
+		}
+	}
+	
+	// --- END effects on image, border, drop-shadow, rounded corners
+	
+	
+	//centre image 
+	&.centre {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+// Styling when only figcaption is present
+//increase border bottom
+figure:has(figcaption):not(:has(.transcript)) {
+	figcaption {
+		margin-bottom: 1rem;
+	}
+}
+
+// Styling when either figcaption or transcript is present
+// add a bottom border to figure
+figure:has(figcaption), figure:has(.transcript) {
+	border-bottom: 1px solid $interface-grey;
+}
+
+// Styling when only transcript is present
+//figure:has(.transcript):not(:has(figcaption)) {
+//  
+//}
+
+// Styling when both figcaption and transcript are present
+//figure:has(figcaption):has(.transcript) {
+//
+//}
+
+
+
+/*
+// Figures are centred, limit to 40rem width by default
 figure {
     @include do-space(margin-top, lg); 
     @include do-space(margin-bottom, lg); 
@@ -15,7 +166,7 @@ figure {
     max-width: $img-width-lg;
 }
 
-/* Use this class to align left rather than centre */
+// Use this class to align left rather than centre
 figure.img-left {
     margin-left: 0;
     margin-right: 0;
@@ -46,7 +197,7 @@ figure.img-left {
 		overflow: hidden;
 		width: 100%;
 		
-			/* At large screen sizes, we can set 16:9 values as layout is adaptive rather than responsive */
+			// At large screen sizes, we can set 16:9 values as layout is adaptive rather than responsive
 	}
 	
 	figcaption {
@@ -88,13 +239,13 @@ img {
     height: auto;
 }
 
-/* A border can be added */
+// A border can be added 
 img.border {
     box-sizing: border-box;
     border: 1px solid $interface-grey;
 }
 
-/* img width classes to override default max-width */
+// img width classes to override default max-width
 .img-width- {
     &full {
         max-width: $img-width-xl;
@@ -113,10 +264,10 @@ img.border {
     }
 }
 
-/* 
-For portrait images, wrap img tag in another div to limit img width 
-while maintaining width for captions, transcripts etc.
-*/
+
+// For portrait images, wrap img tag in another div to limit img width 
+// while maintaining width for captions, transcripts etc.
+
 figure {
 	.portrait {
 		max-width: $img-width-md;
@@ -226,7 +377,7 @@ figure.img-transcript {
 	@include media-breakpoint-up(md) { 
         width: 12rem;
     }
-}
+}*/
 
     
 

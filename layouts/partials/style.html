@@ -7,6 +7,6 @@ placed at the bottom of the html page
 <link rel='stylesheet' id='h5p-plugin-styles-css' href='https://ll-nav.blackaeonium.net/wp-content/plugins/h5p/h5p-php-library/styles/h5p.css?ver=1.15.7' media='all' />
 
 
-{{ $options := (dict "targetPath" "/wp-content/themes/picostrap5-child-base/css-output/bundle.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $options := (dict "targetPath" "/wp-content/themes/picostrap5-child-base/css-output/bundle.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "sass/main.scss" | toCSS $options | minify }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">

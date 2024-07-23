@@ -33,7 +33,7 @@
       <link>http://localhost:1313/examples/example-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/example-4/</guid>
-      <description>Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
+      <description>&amp;lt;blockquote&amp;gt; &amp;lt;p&amp;gt;Content goes here.&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt; Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
     </item>
     <item>
       <title>Example 5</title>
@@ -41,6 +41,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/example-5/</guid>
       <description>HomeAssessmentsReflective writing&#x9;How to use DIEP (Describe Interpret Evaluate Plan) If you don&amp;#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them.&#xA;Mind mapping activity This activity is best done on paper, however, if you have a mobile device with a drawing app, you can create a digital version in the same way.</description>
+    </item>
+    <item>
+      <title>Images</title>
+      <link>http://localhost:1313/examples/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/images/</guid>
+      <description> Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images Let&#39;s try and get this right.&#xA;Default image width (40rem) </description>
     </item>
   </channel>
 </rss>
