@@ -75,7 +75,7 @@
       <link>http://localhost:1313/examples/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/images/</guid>
-      <description> Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images Let&#39;s try and get this right.&#xA;Default image width (40rem) </description>
+      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images The design system offers various options in displaying images including borders, alignment, sizing and adding captions and transcript accordions. Image options Sizing Captions and transcripts Portrait images Markup For images used in page content, wrap all &amp;lt;img&amp;gt; tags in a &amp;lt;figure&amp;gt; tag. Remember to include an alt tag.&#xA;&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;rdquo;my-image.jpg&amp;rdquo; alt=&amp;rdquo;An example image&amp;rdquo; / &amp;gt; &amp;lt;/figure&amp;gt; Defaults Each image has a margin of space-large applied top and bottom The default max width for images is 640px (40rem) Images are aligned to the left by default Image options Use the class my-border to add a border.</description>
     </item>
     <item>
       <title>Landing</title>
@@ -83,6 +83,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/landing/</guid>
       <description>Home /Assignments /Getting started with assignments /Researching your assignment BLergh Whether you are paraphrasing or quoting, integrating the ideas of others with your own argument is an important part of clear, cohesive communication. It’s easy to become repetitive, using ‘this author said’ and ‘that author said’ over and over. Reporting words tell your audience more about a person’s position on a topic, not just that they ‘said’ something.&#xA;Reporting words Reporting words are verbs that help us describe an author’s position on a topic.</description>
+    </item>
+    <item>
+      <title>Short Artist Statement</title>
+      <link>http://localhost:1313/activity/short-artist-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/activity/short-artist-statement/</guid>
+      <description>@gun_shy_design&#xA;#texturalintercourse&#xA;Mixed media installation&#xA;RMIT University Gallery&#xA;#texturalintercourse is a magnificent, OTT, tongue in cheek, contemporary, psychedelic, psycho-sexual journey. A pop subversion exploring fetish in the everyday normality of life. It’s a mad world out there&amp;hellip; Who knows what’s really on people’s minds or behind closed doors?&amp;hellip; Interact with our piece and hashtag #texturalintercourse lovers.&#xA;Thanks to @honchodisko and all the beauties at the 200th Birthday who wrote on our toilet wall lining.</description>
+    </item>
+    <item>
+      <title>Short Artist Statement Video</title>
+      <link>http://localhost:1313/activity/short-artist-statement-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/activity/short-artist-statement-video/</guid>
+      <description>Keith W Clancy&#xA;BLACK WHOLE (RMX), 2019&#xA;RMIT University Gallery&#xA;BLACK WHOLE (RMX) restages an imaginary cabaret performed by an unidentified Officer: he is at once a ghost, a dream and a traumatic symptom.&#xA;Richard Strauss’s opera Ariadne auf Naxos (1916) acts as a self-nesting framework for this meta-fictional allegory about art, sex, death and childhood. Against the silent commentary of old master paintings, arias by Handel and Vivaldi are ‘mistranslated’ by texts adapted from Octave Mirbeau’s ‘The Torture Garden’ (1899).</description>
     </item>
   </channel>
 </rss>
