@@ -98,5 +98,12 @@
       <guid>http://localhost:1313/activity/short-artist-statement-video/</guid>
       <description>Keith W Clancy&#xA;BLACK WHOLE (RMX), 2019&#xA;RMIT University Gallery&#xA;BLACK WHOLE (RMX) restages an imaginary cabaret performed by an unidentified Officer: he is at once a ghost, a dream and a traumatic symptom.&#xA;Richard Strauss’s opera Ariadne auf Naxos (1916) acts as a self-nesting framework for this meta-fictional allegory about art, sex, death and childhood. Against the silent commentary of old master paintings, arias by Handel and Vivaldi are ‘mistranslated’ by texts adapted from Octave Mirbeau’s ‘The Torture Garden’ (1899).</description>
     </item>
+    <item>
+      <title>Video</title>
+      <link>http://localhost:1313/examples/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/video/</guid>
+      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Video Video is displayed via a responsive iFrame, a transcript of the video should be displayed via an accordion to assist visually impaired users.&#xA;These examples show YouTube content, it should be possible to show content from other providers with some adjustments. The text within the transcript is set to small (15px, 13px on smaller screens). Landscape The default aspect ratio is 16:9.</description>
+    </item>
   </channel>
 </rss>

@@ -49,5 +49,12 @@
       <guid>http://localhost:1313/examples/images/</guid>
       <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images The design system offers various options in displaying images including borders, alignment, sizing and adding captions and transcript accordions. Image options Sizing Captions and transcripts Portrait images Markup For images used in page content, wrap all &amp;lt;img&amp;gt; tags in a &amp;lt;figure&amp;gt; tag. Remember to include an alt tag.&#xA;&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;rdquo;my-image.jpg&amp;rdquo; alt=&amp;rdquo;An example image&amp;rdquo; / &amp;gt; &amp;lt;/figure&amp;gt; Defaults Each image has a margin of space-large applied top and bottom The default max width for images is 640px (40rem) Images are aligned to the left by default Image options Use the class my-border to add a border.</description>
     </item>
+    <item>
+      <title>Video</title>
+      <link>http://localhost:1313/examples/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/video/</guid>
+      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Video Video is displayed via a responsive iFrame, a transcript of the video should be displayed via an accordion to assist visually impaired users.&#xA;These examples show YouTube content, it should be possible to show content from other providers with some adjustments. The text within the transcript is set to small (15px, 13px on smaller screens). Landscape The default aspect ratio is 16:9.</description>
+    </item>
   </channel>
 </rss>
