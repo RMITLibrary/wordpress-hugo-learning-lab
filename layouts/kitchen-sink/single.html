@@ -1,0 +1,262 @@
+<!doctype html>
+<!-- Ideally class nav-fixed would be applied to the html tag of the wordpress site -->
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+<head>
+    <!-- meta partial contains charset, viewport, seo etc. -->
+    {{ partial "meta.html" . }}
+    {{ partial "style.html" . }}
+</head>
+<body class="page-template page-template-page-templates page-template-page-sidebar-right page-template-page-templatespage-sidebar-right-php page page-id-2516 page-parent page-child parent-pageid-2500 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_" >
+<!-- Top navigation and menu -->
+
+{{ partial "top-nav.html" }}
+<main id="theme-main">
+<div id="page-content">
+    <!-- START hugo representation of page-sidebar-right.php -->
+    <div class="container">
+		<div class="bread aioseo-breadcrumbs">
+			<span class="aioseo-breadcrumb"><a href="/" title="Home">Home</a></span>
+		</div>
+		<h1 class="margin-top-zero margin-bottom-md">Kitchen sink</h1>
+		<!-- START kitchen sink -->
+<div class="row">
+<div class="col-lg-6">
+<h2 class="margin-top-zero">Colours</h2>
+<p>Default</p>
+<p><span class="color-blue">color-blue</span><br>
+<span class="color-teal">color-teal</span><br>
+<span class="color-green">color-green</span><br>
+<span class="color-yellow">color-yellow</span><br>
+<span class="color-brown">color-brown</span><br>
+<span class="color-red">color-red</span><br>
+<span class="color-pink">color-pink</span><br>
+<span class="color-purple">color-purple</span></p>
+<p>With a border</p>
+<p><span class="color-blue border">color-blue border</span><br>
+<span class="color-teal border">color-teal border</span><br>
+<span class="color-green border">color-green border</span><br>
+<span class="color-yellow border">color-yellow border</span><br>
+<span class="color-brown border">color-brown border</span><br>
+<span class="color-red border">color-red border</span><br>
+<span class="color-pink border">color-pink border</span><br>
+<span class="color-purple border">color-purple border</span></p>
+<p>With no background</p>
+<p><span class="color-blue no-bg">color-blue no-bg</span><br>
+<span class="color-teal no-bg">color-teal no-bg</span><br>
+<span class="color-green no-bg">color-green no-bg</span><br>
+<span class="color-yellow no-bg">color-yellow no-bg</span><br>
+<span class="color-brown no-bg">color-brown no-bg</span><br>
+<span class="color-red no-bg">color-red no-bg</span><br>
+<span class="color-pink no-bg">color-pink no-bg</span><br>
+<span class="color-purple no-bg">color-purple no-bg</span></p>
+</div>
+<div class="col-lg-6"><code> &lt;span class="color-blue"&gt;blue&lt;/span&gt;<br>
+&lt;span class="color-blue border"&gt;blue border&lt;/span&gt;<br>
+&lt;span class="color-blue no-bg"&gt;blue no-background&lt;/span&gt; </code>Remember, never use colour ALONE to convey important information.<br>
+If you want a sequence of colours more distinguishable to people with colour-blindness, follow this pattern:<p></p>
+<p><span class="color-teal border">teal</span> – <span class="color-pink border">pink</span> – <span class="color-green border">green</span> – <span class="color-purple border">purple</span> – <span class="color-brown border">brown</span> – <span class="color-blue border">blue</span> – <span class="color-red border">red</span> – <span class="color-yellow border">yellow</span><br>
+<!-- You can test with this <a href="https://www.toptal.com/designers/colorfilter">Color Filter</a> --></p>
+<p>You may notice these in legacy code as color1 and so on. That’s fine, you can leave those like that for now.</p>
+</div>
+</div>
+<hr>
+<h2>This is an h2 heading</h2>
+<h3>This is an h3 heading</h3>
+<h4>This is an h4 heading</h4>
+<h5>This is an h5 heading</h5>
+<h6>This is an h6 heading</h6>
+<p><strong>Note!</strong> Never use h1, reserved for the site and page title.</p>
+<p>Headings should be nested semantically. The first heading inside the editable text should be a h3, followed by h4 etc. Never select a heading level based on style.</p>
+<hr>
+<div class="row">
+<div class="col-lg-6">
+Split your content into two columns.<br>
+Always use CSS for layout, not tables. Use tables for data (see below).
+</div>
+<div class="col-lg-6">
+<code>&lt;div class="row"&gt;<br>
+&lt;div class="col-lg-6"&gt;<br>
+Left column content<br>
+&lt;/div&gt;<br>
+&lt;div class="col-lg-6"&gt;<br>
+Right column content<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;</code>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-6">
+<h2>Tables</h2>
+<table class="table table-hover">
+<thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lucille</td>
+<td>Are formatted like this</td>
+</tr>
+<tr class="success">
+<td>2</td>
+<td>Success</td>
+<td></td>
+</tr>
+<tr class="warning">
+<td>3</td>
+<td>Warning</td>
+<td></td>
+</tr>
+<tr class="danger">
+<td>4</td>
+<td>Danger</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-lg-6">
+<p><code> &lt;table class="table table-hover"&gt;<br>
+&lt;thead&gt; &lt;tr&gt; &lt;th&gt;#&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Tables&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;<br>
+&lt;tbody&gt; &lt;tr&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;Lucille&lt;/td&gt; &lt;td&gt;Are formatted like this&lt;/td&gt; &lt;/tr&gt;<br>
+&lt;tr class="success"&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;Success&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;<br>
+&lt;tr class="warning"&gt; &lt;td&gt;3&lt;/td&gt; &lt;td&gt;Warning&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;<br>
+&lt;tr class="danger"&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;Danger&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</code></p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-6">
+<h2>Content formatting</h2>
+<p class="lead">This is a lead paragraph.</p>
+<p>This is an ordinary paragraph that is long enough to wrap to multiple lines<br>
+so that you can see how the line spacing looks. <strong>Use strong</strong> and <em>emphasised</em> tags – never use b, i, or ul!</p>
+<p class="text-muted">Muted colour paragraph.</p>
+<p class="text-info">Info colour paragraph.</p>
+<p class="text-success">Success colour paragraph.</p>
+<p class="text-warning">Warning colour paragraph.</p>
+<p class="text-danger">Danger colour paragraph.</p>
+<blockquote><p>Here’s what a blockquote looks like.<br>
+<small>Use small to identify the source.</small></p></blockquote>
+<pre>preFormatting looks like this</pre>
+<p>Abbreviations aren’t necessarily working as expected. Just explain the abbreviation in plain text in the first instance on your page. <abbr title="No Big Deal">NBD</abbr>, OK?</p>
+<ul>
+<li>Normal unordered list</li>
+<li>Has bullets</li>
+<li>Can also work
+<ul>
+<li>With nested children</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Normal ordered list</li>
+<li>Has numbers</li>
+<li>Can also work
+<ol>
+<li>With nested children</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="col-lg-6"><code> &lt;p class="lead"&gt;This is a lead paragraph.&lt;/p&gt;<br>
+&lt;p&gt;This is an ordinary paragraph that is long enough to wrap to multiple lines so that you can see how the line spacing looks. &lt;strong&gt;Use strong&lt;/strong&gt; and &lt;em&gt;emphasised&lt;/em&gt; tags - never use b, i, or ul!&lt;/p&gt;<br>
+&lt;p class="text-muted"&gt;Muted color paragraph.&lt;/p&gt;<br>
+&lt;p class="text-info"&gt;Info color paragraph.&lt;/p&gt;<br>
+&lt;p class="text-success"&gt;Success color paragraph.&lt;/p&gt;<br>
+&lt;p class="text-warning"&gt;Warning color paragraph.&lt;/p&gt;<br>
+&lt;p class="text-danger"&gt;Danger color paragraph.&lt;/p&gt; </code><br>
+<code> &lt;blockquote&gt;Here's what a blockquote looks like. &lt;small&gt;Use small to identify the source.&lt;/small&gt;<br>
+&lt;/blockquote&gt; </code><br>
+<code> &lt;pre&gt;preFormatting looks like this&lt;/pre&gt; </code></div>
+</div>
+<h2>Video</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/8AKdsDMPv20" frameborder="0" allowfullscreen="allowfullscreen" id="iFrameResizer0" scrolling="no" style="overflow: hidden;"></iframe></div>
+<p><code> &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen="allowfullscreen"&gt;&lt;/iframe&gt;&lt;/div&gt;</code></p>
+<p>If the video is 4:3 ratio, add the video43 class, i.e. &lt;div class=”responsive-video video43″&gt;</p>
+<div class="lightweight-accordion"><details><summary class="lightweight-accordion-title"><span>Transcript</span></summary><div class="lightweight-accordion-body"><p>Video transcript</p>
+</div></details></div>
+<p><code> [lightweight-accordion title="Transcript"] Video transcript [/lightweight-accordion]</code></p>
+<hr>
+<div class="row">
+<div class="col-lg-6">
+<h2>Buttons</h2>
+<p><button class="btn btn-lg btn-default" type="button">Default</button><br>
+<button class="btn btn-lg btn-info" type="button">Info</button><br>
+<button class="btn btn-lg btn-success" type="button">Success</button><br>
+<button class="btn btn-lg btn-warning" type="button">Warning</button><br>
+<button class="btn btn-lg btn-danger" type="button">Danger</button></p>
+<p><button class="btn btn-default" type="button">Default</button><br>
+<button class="btn btn-info" type="button">Info</button><br>
+<button class="btn btn-success" type="button">Success</button><br>
+<button class="btn btn-warning" type="button">Warning</button><br>
+<button class="btn btn-danger" type="button">Danger</button></p>
+<p><button class="btn btn-sm btn-default" type="button">Default</button><br>
+<button class="btn btn-sm btn-info" type="button">Info</button><br>
+<button class="btn btn-sm btn-success" type="button">Success</button><br>
+<button class="btn btn-sm btn-warning" type="button">Warning</button><br>
+<button class="btn btn-sm btn-danger" type="button">Danger</button></p>
+</div>
+<div class="col-lg-6"><code> &lt;button type="button" class="btn btn-lg btn-default"&gt;Default&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-lg btn-info"&gt;Info&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-lg btn-success"&gt;Success&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-lg btn-warning"&gt;Warning&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-lg btn-danger"&gt;Danger&lt;/button&gt; </code><code> &lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt; </code><p></p>
+<p><code> &lt;button type="button" class="btn btn-sm btn-default"&gt;Default&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-sm btn-info"&gt;Info&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-sm btn-success"&gt;Success&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-sm btn-warning"&gt;Warning&lt;/button&gt;<br>
+&lt;button type="button" class="btn btn-sm btn-danger"&gt;Danger&lt;/button&gt; </code></p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-6">
+<h2>Alerts</h2>
+<div class="alert"><strong>Warning!</strong><br>
+This is a block style alert.</div>
+<div class="alert alert-info"><strong>Heads up!</strong> This <a class="alert-link" href="#">alert needs your attention</a>, but it’s not super important.</div>
+<div class="alert alert-success"><strong>Well done!</strong> You successfully read <a class="alert-link" href="#">this important alert message</a>.</div>
+<div class="alert alert-warning"><strong>Heads up!</strong> This <a class="alert-link" href="#">alert needs your attention</a>, but it’s not super important.</div>
+<div class="alert alert-danger"><strong>Oh snap!</strong> <a class="alert-link" href="#">Change a few things up</a> and try submitting again.</div>
+</div>
+<div class="col-lg-6"><code> &lt;div class="alert"&gt; Text &lt;/div&gt;<br>
+&lt;div class="alert alert-info"&gt;  Text &lt;/div&gt;<br>
+&lt;div class="alert alert-success"&gt;  Text &lt;/div&gt;<br>
+&lt;div class="alert alert-warning"&gt;  Text &lt;/div&gt;<br>
+&lt;div class="alert alert-danger"&gt;  Text &lt;/div&gt; </code></div>
+</div>
+<hr>
+<h3>Explore (HEPPP) alert</h3>
+<div class="heppp-content-link">
+<h3>Explore these skills in a real world context</h3>
+<ul>
+<li><a href="https://rmit.pressbooks.pub/llcc/chapter/giving-a-presentation/">Related pressbooks page title</a></li>
+</ul>
+</div>
+<p><code> &lt;div class="heppp-content-link"&gt;<br>
+&lt;h3&gt;Explore these skills in a real world context&lt;/h3&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=""&gt;Title&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt; </code></p>
+		
+		<!-- END kitchen sink -->
+        
+	</div>
+</div>
+</main>
+<!-- The footer partial outside the page-content div is an issue for the design system hamburger menu, mabe not not for WordPress site??? -->    
+{{ partial "footer.html" . }}
+{{ partial "script-style.html" . }}
+</body>
+</html>
