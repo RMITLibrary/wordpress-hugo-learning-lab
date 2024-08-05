@@ -1,0 +1,37 @@
+<nav class="right-nav" aria-label="Section Menu">
+{{ if eq .Params.nav "type1" }}
+    <h2><a href="/art-and-design">Blerghtest</a></h2>
+    <h3><a href="/artist-statement">Artist statement</a></h3>
+    <ul>
+        <li><a href="/artist-statement-formats">Page templates</a></li>
+        <li><a href="/artist-statement-video">Video</a></li>
+        <li><a href="/artist-statement-examples">Examples and activities</a></li>
+        <li><a href="/artist-statement-writing-process" class="selected" aria-current="page">Writing process</a>
+            <ul>
+                <li><a href="/artist-statement-mind-mapping">Mind mapping</a></li>
+                <li><a href="/artist-statement-writing-tutorial">Writing tutorial</a></li>
+                <li><a href="/artist-statement-vocabulary-tips">Vocabulary tips</a></li>
+                <li><a href="/artist-statement-editing">Editing</a></li>
+            </ul>
+        </li>
+        <li><a href="/artist-statement-resources">Useful resources</a></li>
+    </ul>
+{{ else }}
+    <h2><a href="/art-and-design">Documentation</a></h2>
+    <h3><a href="/artist-statement">Artist statement</a></h3>
+    <ul>
+        <li><a href="/artist-statement-formats">Page templates</a></li>
+        <li><a href="/artist-statement-video">Video</a></li>
+        <li><a href="/artist-statement-examples">Examples and activities</a></li>
+        <li><a href="/artist-statement-writing-process" class="selected" aria-current="page">Writing process</a>
+            <ul>
+                <li><a href="/artist-statement-mind-mapping">Mind mapping</a></li>
+                <li><a href="/artist-statement-writing-tutorial">Writing tutorial</a></li>
+                <li><a href="/artist-statement-vocabulary-tips">Vocabulary tips</a></li>
+                <li><a href="/artist-statement-editing">Editing</a></li>
+            </ul>
+        </li>
+        <li><a href="/artist-statement-resources">Useful resources</a></li>
+    </ul>
+{{ end}}
+</nav>

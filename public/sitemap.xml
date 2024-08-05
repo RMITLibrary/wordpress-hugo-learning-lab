@@ -10,6 +10,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/</loc>
+  </url><url>
     <loc>http://localhost:1313/example-1/</loc>
   </url><url>
     <loc>http://localhost:1313/examples/example-1/</loc>
@@ -33,6 +35,10 @@
     <loc>http://localhost:1313/kitchen-sink/</loc>
   </url><url>
     <loc>http://localhost:1313/landing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/page-templates/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/test2/</loc>
   </url><url>
     <loc>http://localhost:1313/activity/short-artist-statement/</loc>
   </url><url>

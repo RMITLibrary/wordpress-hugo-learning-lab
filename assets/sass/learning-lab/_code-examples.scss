@@ -14,3 +14,15 @@
 pre {
     margin: 0;
 }
+
+//Default behaviour is for code to scroll, using this class wraps it with the box.
+.wrap-code {
+  overflow: hidden; // Ensure no scrolling
+}
+
+.wrap-code pre {
+  white-space: pre-wrap; // Allow code to wrap
+  word-break: break-word; // Break long words if necessary
+  overflow: hidden; // Ensure no scrolling within pre
+}
+

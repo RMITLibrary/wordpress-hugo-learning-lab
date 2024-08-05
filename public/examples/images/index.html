@@ -307,7 +307,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <h2>Markup</h2>
 <p>For images used in page content, wrap all <code>&lt;img&gt;</code> tags in a <code>&lt;figure&gt;</code> tag. Remember to include an alt tag.</p>
 <figure>
-    <img src="/images/landscape.jpg" alt="An example image" />
+    <img src="http://localhost:1313/images/landscape.jpg" alt="An example image" />
 </figure>
 <div class="highlight">
 <pre class="chroma">
@@ -318,7 +318,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <h2>Defaults</h2>
 <ul>
 	<li>Each image has a margin of <strong>space-large</strong> applied top and bottom</li>
-	<li>The default max width for images is <strong>640px (40rem)</strong></li>
+	<li>The default max width for images is <strong>640px</strong></li>
 	<li>Images are aligned to the left by default</li>
 </ul>
 <a id="options"></a>
@@ -331,7 +331,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	<li>Multiple classes can be added</li>
 </ul>
 <figure class="my-border drop-shadow round-corners centre">
-    <img src="/images/1364-structure-atom-drawing.png" alt="An example image" />
+    <img src="http://localhost:1313/images/1364-structure-atom-drawing.png" alt="An example image" />
 </figure>
 <div class="highlight">
 <pre class="chroma">
@@ -341,45 +341,40 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </pre></div>
 <a id="sizing"></a>
 <h2>Sizing</h2>
-<p>By default the max-width is set to <strong class="nowrap">40rem (640px)</strong>.</p>
-<p>A range of helper classes are available to override the max-width value:</p>
+<p>By default the max-width is set to <strong class="nowrap">640px</strong>.</p>
+<p>A range of attributes can override this max-width value:</p>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Class name</th>
+      <th>Attribute</th>
       <th>max-width</th>
       <th>Suggested use</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>img-width-full</code></td>
+      <td><code>size="wide"</code></td>
       <td>100%</td>
       <td>Very wide images that aren’t too tall</td>
     </tr>
     <tr>
-      <td><code>img-width-lg</code></td>
-      <td>40rem (640px)</td>
-      <td>Landscape images (default)</td>
-    </tr>
-    <tr>
       <td><code>img-width-md</code></td>
-      <td>25rem (400px)</td>
+      <td>400px</td>
       <td>Portrait and square images</td>
     </tr>
     <tr>
       <td><code>img-width-sm</code></td>
-      <td>18.5rem (296px)</td>
+      <td>296px</td>
       <td>Really tall portrait images</td>
     </tr>
   </tbody>
 </table>
 <figure class="img-width-md">
-    <img src="/images/landscape.jpg" alt="An example image" />
+    <img src="http://localhost:1313/images/landscape.jpg" alt="An example image" />
 	<figcaption>A medium image with class "img-width-md" applied.</figcaption>
 </figure>
 <figure class="wide">
-    <img src="/images/landscape.jpg" alt="" />
+    <img src="http://localhost:1313/images/landscape.jpg" alt="" />
 	<figcaption>A wide image with class "wide" applied.</figcaption>
 </figure>
 <div class="highlight">
@@ -403,11 +398,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </pre></div>
 <a id="captions"></a>
 <h2>Captions and transcripts</h2>
-<p>Captions can provide context for the use of an image and provide a place to attribute and credit the source of an image.</p>
-<p>Transcripts are a way to provide an accessible alternative to an image, where a longer description is required that can be provided by an alt tag (alt tags should be no more than 100 characters).</p>
+<p>Captions can provide context for the use of an image and provide a place to attribute and credit the source of an image. A caption can be added using <code>caption="Insert caption here"</code></p>
+<p>Transcripts are a way to provide an accessible alternative to an image, where a longer description is required that can be provided by an alt tag. To add a transcript, place a <code>&lbrack;transcript&rbrack;</code> shortcode in between the <code>&lbrack;ll-image&rbrack;</code> shortcode. <a href="insert-link.html">Find ut more information about the transcript shortcode.</a></p>
 <!-- START figure caption and transcript -->
 <figure>
-    <img src="/images/landscape.jpg" alt="" />
+    <img src="http://localhost:1313/images/landscape.jpg" alt="" />
 	<figcaption>An example caption for this image.</figcaption>
 	<!-- START accordion item -->
 	<div class="accordion-item transcript">
@@ -461,12 +456,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <!-- END code example -->
 <a id="portrait"></a>
 <h2>Portrait image (25rem)</h2>
+<p>When using a portrait, the default width of <strong>640px</strong> might make the image too tall. You can use <code>portrait="true"</code> to both limit the width to <strong>400px</strong> and place the caption to the right of the image.</p>
+<p>Using <code>portrait="true"</code> in conjunction with <code>size="sm"</code> further limits the width to <strong>296px</strong>. This is useful for really tall images. Note that other size parameters and centring do not work with <code>portrait="true"</code></p>
 <p>When using portrait images, using sizing classes such as <code>img-width-md</code> or <code>img-width-sm</code> can be helpful in ensuring the image height isn't too tall. When adding captions or transcripts, use the <code>portrait</code> or <code>portrait-small</code> class to allow the caption to be presented to the side of the image.</p> 
 <p>Note that using these classes supersede any image sizing classes used. Using <code>portrait</code>, the image has a max width of <strong>25rem (400px)</strong>, for <code>portrait-small</code>, it's <strong>18.5rem (296px)</strong>. An additional wrapper div groups the image an caption together to allow these more complex layouts to function.</p>
 <!-- START figure portrait default -->
 <figure class="portrait">
 	<div class="image-caption-wrapper">
-		<img src="/images/portrait.jpg" alt="" />
+		<img src="http://localhost:1313/images/portrait.jpg" alt="" />
 		<figcaption>An example caption for this image.</figcaption>
 	</div>
 	<!-- START accordion item -->
@@ -504,7 +501,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <!-- START figure portrait default -->
 <figure class="portrait-small">
 	<div class="image-caption-wrapper">
-		<img src="/images/tall-portrait.jpg" alt="" />
+		<img src="http://localhost:1313/images/tall-portrait.jpg" alt="" />
 		<figcaption>An example caption for this image.</figcaption>
 	</div>
 	<!-- START accordion item -->
@@ -525,8 +522,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </figure>
 <!-- END figure portrait default -->
 <div class="highlight">
-<pre class="chroma">
-<code class="language-html">&lt;figure class=&quot;portrait-small&quot;&gt;
+<pre>
+<code>&lt;figure class=&quot;portrait-small&quot;&gt;
 	&lt;div class=&quot;image-caption-wrapper&quot;&gt;
 		&lt;img src=&quot;my-image.jpg&quot; alt=&quot;An example image&quot; /&gt;
 		&lt;figcaption&gt;An example caption for this image.&lt;/figcaption&gt;
@@ -538,6 +535,23 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	&lt;!-- END accordion item --&gt;
 &lt;/figure&gt;</code>
 </pre></div>
+<!-- START figure portrait default -->
+<figure class="portrait-small">
+	<div class="image-caption-wrapper">
+		<img src="/images/tall-portrait.jpg" alt="" />
+		<figcaption>An example caption for this image.</figcaption>
+	</div>
+</figure>
+<!-- END figure portrait default -->
+<div class="highlight">
+<pre>
+<code>&lbrack;SCROLL this long code url="https://path.to/image.jpg" alt="An example image" border="true" rounded="true" shadow="true" align="centre"&rbrack;&lbrack;/ll-image&rbrack;</code>
+</pre></div>
+<div class="highlight wrap-code">
+<pre>
+<code>WRAP this long code ll-image url="https://path.to/image.jpg" alt="An example image" border="true" rounded="true" shadow="true" align="centre"&rbrack;&lbrack;/ll-image&rbrack;</code>
+</pre></div>
+
 
             </div>
                
