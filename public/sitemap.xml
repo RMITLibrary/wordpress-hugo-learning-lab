@@ -38,11 +38,11 @@
   </url><url>
     <loc>http://localhost:1313/docs/page-templates/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/test2/</loc>
-  </url><url>
     <loc>http://localhost:1313/activity/short-artist-statement/</loc>
   </url><url>
     <loc>http://localhost:1313/activity/short-artist-statement-video/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/shortcode-escape/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

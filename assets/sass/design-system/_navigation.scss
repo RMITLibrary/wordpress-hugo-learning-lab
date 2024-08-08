@@ -183,17 +183,7 @@
     padding-top: 0rem;
 }
 
-//remove border radius
 .right-nav-accordion > *:first-child {
-	
-	border-top-left-radius: 0.5rem;
-	border-top-right-radius: 0.5rem;
-	
-	a { 
-		border-top-left-radius: 0.5rem;
-		border-top-right-radius: 0.5rem;
-		padding-top: 0.75rem; 
-	}
 	
 	h2 .accordion-button {
 		border-top-left-radius: 0.5rem !important;

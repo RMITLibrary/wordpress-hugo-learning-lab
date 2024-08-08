@@ -106,7 +106,7 @@ footer {
 		
 		font-size: 1rem;
         font-weight: 500;
-		color: aquamarine;
+		color: $white;
 		
 		list-style-type: none !important;
 		
@@ -154,6 +154,11 @@ footer * {
             max-width: 26rem;
             
             flex-shrink: 0; 
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
         }
         
         .content img {

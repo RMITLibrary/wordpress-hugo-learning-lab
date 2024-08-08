@@ -75,7 +75,7 @@
       <link>http://localhost:1313/examples/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/examples/images/</guid>
-      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images The design system offers various options in displaying images including borders, alignment, sizing and adding captions and transcript accordions. Image options Sizing Captions and transcripts Portrait images Markup For images used in page content, wrap all &amp;lt;img&amp;gt; tags in a &amp;lt;figure&amp;gt; tag. Remember to include an alt tag.&#xA;&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;rdquo;my-image.jpg&amp;rdquo; alt=&amp;rdquo;An example image&amp;rdquo; / &amp;gt; &amp;lt;/figure&amp;gt; Defaults Each image has a margin of space-large applied top and bottom The default max width for images is 640px (40rem) Images are aligned to the left by default Image options Use the class my-border to add a border.</description>
+      <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images The design system offers various options in displaying images including borders, alignment, sizing and adding captions and transcript accordions. Image options Sizing Captions and transcripts Portrait images Markup For images used in page content, wrap all &amp;lt;img&amp;gt; tags in a &amp;lt;figure&amp;gt; tag. Remember to include an alt tag.&#xA;&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;rdquo;my-image.jpg&amp;rdquo; alt=&amp;rdquo;An example image&amp;rdquo; / &amp;gt; &amp;lt;/figure&amp;gt; Defaults Each image has a margin of space-large applied top and bottom The default max width for images is 640px Images are aligned to the left by default Image options Use the class my-border to add a border.</description>
     </item>
     <item>
       <title>Landing</title>
@@ -96,14 +96,7 @@
       <link>http://localhost:1313/docs/page-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/page-templates/</guid>
-      <description>Home Referencing Page templates A well-written paragraph contains a topic sentence. A topic sentence controls the main idea discussed in a paragraph. It provides the reader with a summary of the key idea and the point of view the writer is expressing. It is often the first sentence as it acts as an introduction to what follows, making it easier for the reader to follow.&#xA;Transcript‘he loves me he loves me not’ is written 21,319 times which represents the number of days I have lived and asked this question.</description>
-    </item>
-    <item>
-      <title>Page templates</title>
-      <link>http://localhost:1313/docs/test2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/test2/</guid>
-      <description>Home Referencing Topic sentences A well-written paragraph contains a topic sentence. A topic sentence controls the main idea discussed in a paragraph. It provides the reader with a summary of the key idea and the point of view the writer is expressing. It is often the first sentence as it acts as an introduction to what follows, making it easier for the reader to follow.&#xA;Transcript‘he loves me he loves me not’ is written 21,319 times which represents the number of days I have lived and asked this question.</description>
+      <description> Home Referencing Page templates </description>
     </item>
     <item>
       <title>Short Artist Statement</title>
@@ -118,6 +111,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/activity/short-artist-statement-video/</guid>
       <description>Keith W Clancy&#xA;BLACK WHOLE (RMX), 2019&#xA;RMIT University Gallery&#xA;BLACK WHOLE (RMX) restages an imaginary cabaret performed by an unidentified Officer: he is at once a ghost, a dream and a traumatic symptom.&#xA;Richard Strauss’s opera Ariadne auf Naxos (1916) acts as a self-nesting framework for this meta-fictional allegory about art, sex, death and childhood. Against the silent commentary of old master paintings, arias by Handel and Vivaldi are ‘mistranslated’ by texts adapted from Octave Mirbeau’s ‘The Torture Garden’ (1899).</description>
+    </item>
+    <item>
+      <title>Shortcode escaper</title>
+      <link>http://localhost:1313/docs/shortcode-escape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shortcode-escape/</guid>
+      <description> Home Referencing Bracket Escaper Paste your code with brackets into the first text area, and the escaped content will appear in the second text area.&#xA;Escape Brackets </description>
     </item>
     <item>
       <title>Video</title>
