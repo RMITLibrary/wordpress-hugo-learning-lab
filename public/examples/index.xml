@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on Hugo wodpress</title>
-    <link>http://localhost:1313/examples/</link>
+    <link>http://localhost:57854/examples/</link>
     <description>Recent content in Examples on Hugo wodpress</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <atom:link href="http://localhost:1313/examples/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57854/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example 2</title>
-      <link>http://localhost:1313/examples/example-1/</link>
+      <link>http://localhost:57854/examples/example-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/example-1/</guid>
+      <guid>http://localhost:57854/examples/example-1/</guid>
       <description>Home Referencing Topic sentences A well-written paragraph contains a topic sentence. A topic sentence controls the main idea discussed in a paragraph. It provides the reader with a summary of the key idea and the point of view the writer is expressing. It is often the first sentence as it acts as an introduction to what follows, making it easier for the reader to follow.&#xA;Transcript‘he loves me he loves me not’ is written 21,319 times which represents the number of days I have lived and asked this question.</description>
     </item>
     <item>
       <title>Example 2</title>
-      <link>http://localhost:1313/examples/example-2/</link>
+      <link>http://localhost:57854/examples/example-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/example-2/</guid>
+      <guid>http://localhost:57854/examples/example-2/</guid>
       <description>Home Referencing Quoting When you are researching a topic, sometimes you want to include the exact words of another author or speaker in your own work. Using someone’s words in their original form is called quoting, or including a direct quote.&#xA;When to quote Quoting is the way to include the exact words of others in our own work. You might want to use a quote when the specific words that an author or speaker has used are important, such as when someone offers a new definition for a term or presents a new theory.</description>
     </item>
     <item>
       <title>Example 3</title>
-      <link>http://localhost:1313/examples/example-3/</link>
+      <link>http://localhost:57854/examples/example-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/example-3/</guid>
+      <guid>http://localhost:57854/examples/example-3/</guid>
       <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Integrating ideas with reporting words Not all information is created equal.&#xA;From an activity in this week’s lecture I learned that the best place to start resource planning is with questioning to clarify the client needs and to enable the work breakdown structure (WBS).The guest lecturer in Project Management Techniques, Dr Strangelove, started her presentation by asking us to assemble as a group of five and then build a tower from straws.</description>
     </item>
     <item>
       <title>Example 4</title>
-      <link>http://localhost:1313/examples/example-4/</link>
+      <link>http://localhost:57854/examples/example-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/example-4/</guid>
+      <guid>http://localhost:57854/examples/example-4/</guid>
       <description>&amp;lt;blockquote&amp;gt; &amp;lt;p&amp;gt;Content goes here.&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt; Blockquote Navigation Shortcode Creates a linked blockquote with options for category, extra-info and icon&#xA;Arguments: $content - text in the blockquote (optional) $atts - attributes as follows: title - Title of the blockquote link - URL to link to (rmith.edu.au is the default) category - Small text shown above title (optional) extra-info - Small text shown below content (optional) icon - Absolute path to icon (optional - svg preferred) &amp;lt;button class=&amp;quot;btn btn-primary&amp;quot; &amp;gt;Primary button&amp;lt;/button&amp;gt; [blockquote-nav category=&#39;Category&#39; link=&#39;/cohesion&#39; title=&#39;This is the title&#39; extra-info=&#39;Extra information&#39; icon=&#39;https://path.</description>
     </item>
     <item>
       <title>Example 5</title>
-      <link>http://localhost:1313/examples/example-5/</link>
+      <link>http://localhost:57854/examples/example-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/example-5/</guid>
+      <guid>http://localhost:57854/examples/example-5/</guid>
       <description>HomeAssessmentsReflective writing&#x9;How to use DIEP (Describe Interpret Evaluate Plan) If you don&amp;#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them.&#xA;Mind mapping activity This activity is best done on paper, however, if you have a mobile device with a drawing app, you can create a digital version in the same way.</description>
     </item>
     <item>
       <title>Images</title>
-      <link>http://localhost:1313/examples/images/</link>
+      <link>http://localhost:57854/examples/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/images/</guid>
+      <guid>http://localhost:57854/examples/images/</guid>
       <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Images The design system offers various options in displaying images including borders, alignment, sizing and adding captions and transcript accordions. Image options Sizing Captions and transcripts Portrait images Markup For images used in page content, wrap all &amp;lt;img&amp;gt; tags in a &amp;lt;figure&amp;gt; tag. Remember to include an alt tag.&#xA;&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;rdquo;my-image.jpg&amp;rdquo; alt=&amp;rdquo;An example image&amp;rdquo; / &amp;gt; &amp;lt;/figure&amp;gt; Defaults Each image has a margin of space-large applied top and bottom The default max width for images is 640px Images are aligned to the left by default Image options Use the class my-border to add a border.</description>
     </item>
     <item>
       <title>Video</title>
-      <link>http://localhost:1313/examples/video/</link>
+      <link>http://localhost:57854/examples/video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/examples/video/</guid>
+      <guid>http://localhost:57854/examples/video/</guid>
       <description>Home Assessments Getting started with assignments Develop your search strategy Choose valid sources Video Video is displayed via a responsive iFrame, a transcript of the video should be displayed via an accordion to assist visually impaired users.&#xA;These examples show YouTube content, it should be possible to show content from other providers with some adjustments. The text within the transcript is set to small (15px, 13px on smaller screens). Landscape The default aspect ratio is 16:9.</description>
     </item>
   </channel>
