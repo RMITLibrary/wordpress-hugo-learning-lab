@@ -445,51 +445,72 @@ textarea {
 <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.4.3" id="mathjax-js"></script>
 <script src="https://ll-nav.blackaeonium.net/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
-
 <script>
+
+
+
     
- 
-var wrapperNavBar = document.getElementById("blergh");
+
 var menuButton = document.getElementById("menu-button");
 var pageContent = document.getElementById("theme-main"); 
 var footer = document.getElementById("wrapper-footer-colophon"); 
   
- 
+
 var menuDisplay = false;
     
- 
+
 var scrollPosition;
 
- 
+
 menuButton.addEventListener("click", showHideMenu);
 
 
 
 
+
+
+
 function showHideMenu() {
-    if(menuDisplay == false)
-    {
-        menuDisplay = true;
-        scrollPosition = window.scrollY;  
-        pageContent.style.display = "none"; 
-        footer.style.display = "none"; 
+    
+    
+    if (menuDisplay == false) {
         
+        menuDisplay = true;                     
+        scrollPosition = window.scrollY;   
+
         
-    }
-    else
-    {
-        menuDisplay = false;
+        pageContent.style.display = "none";
+        footer.style.display = "none";          
+
+    } else {
+        
+        menuDisplay = false;                    
+
+        
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
         
-        document.documentElement.style.scrollBehavior = "auto";
-        window.scroll(0, scrollPosition);
-        document.documentElement.style.scrollBehavior = "smooth";
         
-         
+        document.documentElement.style.scrollBehavior = "auto";
+        
+        
+        window.scroll(0, scrollPosition);
+        
+        
+        document.documentElement.style.scrollBehavior = "smooth";
     }
 }
+ 
 
+
+
+
+
+
+    
+    
 </script>
+    
+    
 </body>
 </html>

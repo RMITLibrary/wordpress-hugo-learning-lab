@@ -3,51 +3,70 @@
 <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.4.3" id="mathjax-js"></script>
 <script src="https://ll-nav.blackaeonium.net/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
-<!-- Script to help with menu -->
 <script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------
     
-/* Grab both the menu button and the page content */
-var wrapperNavBar = document.getElementById("blergh");
+// Grab both the menu button, the page content and footer
 var menuButton = document.getElementById("menu-button");
 var pageContent = document.getElementById("theme-main"); 
 var footer = document.getElementById("wrapper-footer-colophon"); 
   
-/* Store display status of menu */
+// Store display status of menu
 var menuDisplay = false;
     
-/* Store content scroll position */
+// Store content scroll position
 var scrollPosition;
 
-/* Listen for click - comment out for now */
+// Listen for click - call showhideMenu
 menuButton.addEventListener("click", showHideMenu);
 
-/*
-If menu is hidden, bootstrap wll show it, hide page content.
-If it's displayed, bottstrap will hide it, show the content.
-*/
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
 
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
 function showHideMenu() {
-    if(menuDisplay == false)
-    {
-        menuDisplay = true;
-        scrollPosition = window.scrollY;  
-        pageContent.style.display = "none"; 
-        footer.style.display = "none"; 
-        
-        //wrapperNavBar.style.backgroundColor = "#000056";
-    }
-    else
-    {
-        menuDisplay = false;
+    
+    // Check if the menu is currently hidden
+    if (menuDisplay == false) {
+        // Set the menu display flag to true (menu is now shown)and save scroll position
+        menuDisplay = true;                     
+        scrollPosition = window.scrollY;   
+
+        // Hide the main page content and footer
+        pageContent.style.display = "none";
+        footer.style.display = "none";          
+
+    } else {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;                    
+
+        // Show the main page content and footer
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
         
+        // Temporarily disable smooth scrolling to jump to the saved scroll position
         document.documentElement.style.scrollBehavior = "auto";
-        window.scroll(0, scrollPosition);
-        document.documentElement.style.scrollBehavior = "smooth";
         
-         //wrapperNavBar.style.backgroundColor = none;
+        // Scroll to the saved scroll position
+        window.scroll(0, scrollPosition);
+        
+        // Re-enable smooth scrolling
+        document.documentElement.style.scrollBehavior = "smooth";
     }
 }
+ 
+// ---------
+// Script to turn on embed mode
+// Remove top nav, footer, breadcrumbs, right nav, keywords
+// Options to remove prev/next, h1, p lead
 
+// ---------
+    
+    
 </script>
+    
+    
