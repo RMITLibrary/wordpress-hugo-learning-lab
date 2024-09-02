@@ -9,6 +9,20 @@ parent: "Examples"
 <p class="lead">If you don&#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them.</p>
 <h2>Mind mapping activity</h2>
 <p>This activity is best done on paper, however, if you have a mobile device with a drawing app, you can create a digital version in the same way.</p>
+<h3>Sequence</h3>
+<ul class="striped-list striped-list-col-2">
+  <li>First, firstly, second, third, thirdly</li>
+  <li>next, last finally</li>
+  <li>in addition, moreover</li>
+  <li>furthermore</li>
+  <li>also</li>
+  <li>In conclusion, to summarise</li>
+  <li>The first...</li>
+  <li>The/a second</li>
+  <li>One...</li>
+  <li>Another...</li>
+  <li>An additional...</li>
+</ul>
 <p>For your artist statement mind map, get your creative work together and look at it as a whole before you start. This can help you to identify key themes and the development path of your practice. </p>
 <aside class="visually-hidden-focusable">
     <div>

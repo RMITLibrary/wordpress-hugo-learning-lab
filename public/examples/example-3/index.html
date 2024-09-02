@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57854&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62787&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -81,7 +81,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				
 				<div class="col-auto left-nav">
 					<div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
-					<a href="/design-system/" class="h2">Design system<span class="visually-hidden"> homepage</span></a>
+					<h2>
+                        
+                        <a href="/">
+                            <span aria-hidden="true">Learning lab</span>
+                            <span class="visually-hidden">Learning lab homepage</span>
+                        </a>
+                    </h2>
 				</div>
 				
 				
@@ -281,6 +287,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </section>
 </div>
 
+
+
+				<div style="margin: 24px;">
+    <button type="button" class="btn btn-default" data-bs-theme-value="light" aria-pressed="false">Light</button>
+    <button type="button" class="btn btn-default" data-bs-theme-value="dark" aria-pressed="false">Dark</button>
+    <button type="button" class="btn btn-default" data-bs-theme-value="auto" aria-pressed="true">Auto</button>
+</div>
+
             </div>
             
             
@@ -442,51 +456,148 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.4.3" id="mathjax-js"></script>
 <script src="https://ll-nav.blackaeonium.net/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
-
 <script>
+
+
+
     
- 
-var wrapperNavBar = document.getElementById("blergh");
+
 var menuButton = document.getElementById("menu-button");
 var pageContent = document.getElementById("theme-main"); 
 var footer = document.getElementById("wrapper-footer-colophon"); 
   
- 
+
 var menuDisplay = false;
     
- 
+
 var scrollPosition;
 
- 
+
 menuButton.addEventListener("click", showHideMenu);
 
 
 
 
+
+
+
 function showHideMenu() {
-    if(menuDisplay == false)
-    {
-        menuDisplay = true;
-        scrollPosition = window.scrollY;  
-        pageContent.style.display = "none"; 
-        footer.style.display = "none"; 
+    
+    
+    if (menuDisplay == false) {
         
+        menuDisplay = true;                     
+        scrollPosition = window.scrollY;   
+
         
-    }
-    else
-    {
-        menuDisplay = false;
+        pageContent.style.display = "none";
+        footer.style.display = "none";          
+
+    } else {
+        
+        menuDisplay = false;                    
+
+        
         pageContent.style.display = "block"; 
         footer.style.display = "block"; 
         
-        document.documentElement.style.scrollBehavior = "auto";
-        window.scroll(0, scrollPosition);
-        document.documentElement.style.scrollBehavior = "smooth";
         
-         
+        document.documentElement.style.scrollBehavior = "auto";
+        
+        
+        window.scroll(0, scrollPosition);
+        
+        
+        document.documentElement.style.scrollBehavior = "smooth";
     }
 }
+ 
 
+
+
+
+
+
+
+
+    
+    (() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+    
 </script>
+    
+    
 </body>
 </html>
