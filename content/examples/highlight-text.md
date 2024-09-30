@@ -6,6 +6,8 @@ parent: "Examples"
 <nav aria-label="breadcrumbs"><ul class="breadcrumbs"><li><a href="/">Home</a></li><li><a href="/assessments">Assessments</a></li><li><a href="/reflective-writing-1">Reflective writing</a></li></ul></nav>			            <a id="main-content"></a>
 <h1 class="margin-top-zero">How to use DIEP (Describe Interpret Evaluate Plan)</h1>
 
+
+
 <p class="lead">If you don&#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them.</p>
 <h2>Highlight text</h2>
 <div class="highlight-text">
