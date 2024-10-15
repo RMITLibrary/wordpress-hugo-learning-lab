@@ -12,7 +12,7 @@ $img-width-xs: 10rem;		//128px;
 
 // Dark mode
 @include color-mode(dark) {
-	img {
+	#page-content img {
         filter: brightness(0.9) contrast(0.9);	//drop the contrast in dark mode to reduce eye strain.
 		
 		//Add a background colour to mitiage transparent png images which are premonenetly dark.
@@ -34,6 +34,12 @@ figure {
 		@include type-small;
 		padding-top: 0.25rem;
 		padding-bottom: 0.5rem;
+	}
+
+	//class to give a bigger gap between imafge and caption
+	//(useful for diagram images on white backgrounds)
+	figcaption.gap-lg {
+		padding-top: 1.5rem;
 	}
 	
 	img {
