@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:63992/sandbox/</loc>
+    <loc>http://localhost:57581/sandbox/</loc>
   </url><url>
-    <loc>http://localhost:63992/activity/</loc>
+    <loc>http://localhost:57581/activity/</loc>
   </url><url>
-    <loc>http://localhost:63992/activity/artist-statement-artwork/</loc>
+    <loc>http://localhost:57581/activity/artist-statement-artwork/</loc>
   </url><url>
-    <loc>http://localhost:63992/categories/</loc>
+    <loc>http://localhost:57581/categories/</loc>
   </url><url>
-    <loc>http://localhost:63992/docs/</loc>
+    <loc>http://localhost:57581/docs/</loc>
   </url><url>
-    <loc>http://localhost:63992/example-1/</loc>
+    <loc>http://localhost:57581/example-1/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/example-1/</loc>
+    <loc>http://localhost:57581/examples/example-1/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/example-2/</loc>
+    <loc>http://localhost:57581/examples/example-2/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/example-3/</loc>
+    <loc>http://localhost:57581/examples/example-3/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/example-4/</loc>
+    <loc>http://localhost:57581/examples/example-4/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/example-5/</loc>
+    <loc>http://localhost:57581/examples/example-5/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/</loc>
+    <loc>http://localhost:57581/examples/</loc>
   </url><url>
-    <loc>http://localhost:63992/</loc>
+    <loc>http://localhost:57581/examples/highlight-text/</loc>
   </url><url>
-    <loc>http://localhost:63992/home/</loc>
+    <loc>http://localhost:57581/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/images/</loc>
+    <loc>http://localhost:57581/home/</loc>
   </url><url>
-    <loc>http://localhost:63992/kitchen-sink/</loc>
+    <loc>http://localhost:57581/examples/images/</loc>
   </url><url>
-    <loc>http://localhost:63992/landing/</loc>
+    <loc>http://localhost:57581/kitchen-sink/</loc>
   </url><url>
-    <loc>http://localhost:63992/docs/page-templates/</loc>
+    <loc>http://localhost:57581/landing/</loc>
   </url><url>
-    <loc>http://localhost:63992/activity/short-artist-statement/</loc>
+    <loc>http://localhost:57581/docs/page-templates/</loc>
   </url><url>
-    <loc>http://localhost:63992/activity/short-artist-statement-video/</loc>
+    <loc>http://localhost:57581/search/</loc>
   </url><url>
-    <loc>http://localhost:63992/docs/shortcode-escape/</loc>
+    <loc>http://localhost:57581/activity/short-artist-statement/</loc>
   </url><url>
-    <loc>http://localhost:63992/tags/</loc>
+    <loc>http://localhost:57581/activity/short-artist-statement-video/</loc>
   </url><url>
-    <loc>http://localhost:63992/examples/video/</loc>
+    <loc>http://localhost:57581/docs/shortcode-escape/</loc>
+  </url><url>
+    <loc>http://localhost:57581/tags/</loc>
+  </url><url>
+    <loc>http://localhost:57581/examples/video/</loc>
   </url>
 </urlset>
