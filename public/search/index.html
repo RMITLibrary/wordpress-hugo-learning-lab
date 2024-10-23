@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57581&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56326&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -277,10 +277,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </nav>
 </header>
 <main id="theme-main">
-    <div class="container" id="page-content">
+<div class="container" id="page-content">
 
-         
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
+    
     <div class="col-12">
         <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
@@ -288,37 +289,64 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </ul>
         </nav>
         <a id="main-content"></a>
+        
         <h1 class="margin-top-zero">Search the learning lab</h1>
          
         <input type="text" id="searchInput" placeholder="Search..."><button id="searchButton">Search</button>
-        <div class="search-debug">
-            <div>
+        
+        <div id="search-debug" class="search-debug">
+            <div>            
+                
                 <label for="threshold">
                     <a href="https://www.fusejs.io/api/options.html#threshold" target="docs">Threshold:</a>
                 </label>
                 <input type="number" id="threshold" min="0" max="1" step="0.05" value="0.4">
-            </div>
-            <div>
-                <label for="distance">
-                    <a href="https://www.fusejs.io/api/options.html#distance" target="docs">Distance:</a>
+                </div>
+                <div>
+                    <label for="distance">
+                        <a href="https://www.fusejs.io/api/options.html#distance" target="docs">Distance:</a>
+                    </label>
+                    <input type="number" id="distance" min="0" max="10000" step="50" value="800">
+                </div>
+                <div>
+                    <label for="location">
+                        <a href="https://www.fusejs.io/api/options.html#location" target="docs">Location:</a>
+                    </label>
+                    <input type="number" id="location" min="0" max="10000" step="50" value="0">
+                </div>
+                <div>
+                    <label for="minMatchCharLength" class="small">
+                        <a href="https://www.fusejs.io/api/options.html#minmatchcharlength" target="docs">Min Match Char Length:</a>
+                    </label>
+                    <input type="number" id="minMatchCharLength" min="1" max="100" step="1" value="2">
+                </div>
+                <div>
+                <label for="useExtendedSearch" class="small">
+                    <a href="https://www.fusejs.io/api/options.html#useextendedsearch" target="_blank">Use Extended Search:</a>
                 </label>
-                <input type="number" id="distance" min="0" max="10000" step="50" value="800">
-            </div>
-            <div>
-                <label for="location">
-                    <a href="https://www.fusejs.io/api/options.html#location" target="docs">Location:</a>
-                </label>
-                <input type="number" id="location" min="0" max="10000" step="50" value="0">
-            </div>
-            <div>
-                <label for="minMatchCharLength" class="small">
-                    <a href="https://www.fusejs.io/api/options.html#minmatchcharlength" target="docs">Min Match Char Length:</a>
-                </label>
-                <input type="number" id="minMatchCharLength" min="1" max="100" step="1" value="2">
+                <input type="checkbox" id="useExtendedSearch">
             </div>
         </div>
-        <ul id="results"></ul>
-        <hr>
+        
+        
+        
+        <div id="loading-container">
+            <h2>Searching... </h2>
+        </div>
+        
+        
+        <div id="results-container" class="collapse">
+            <div>
+                <h2 >Search results</h2>
+                <ul class="list-link-expanded" id="results"></ul>  
+            </div>   
+        </div>
+        
+        
+        
+        
+        
+    <hr>
     </div>
     
     <div class="col-xl-12">
@@ -395,18 +423,45 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 </main>
 <script>
+    var dataURL = '/data/pages.json';
     var debug = false;
-
     
-    fetch('/data/pages.json')
+    
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const debugBool = urlParams.get('debug');
+    
+    if(debugBool == 'true') {
+        debug = true;
+        
+        var debugInterface = document.getElementById("search-debug");
+        debugInterface.style.display = "block";
+    }
+    
+    console.log("debugBool: "+ debugBool);
+    
+    
+    fetch(dataURL)
         .then(response => response.json())
         .then(data => {
             function performSearch() {
-                const query = document.getElementById('searchInput').value;
-                const threshold = parseFloat(document.getElementById('threshold').value);
-                const distance = parseInt(document.getElementById('distance').value, 10);
-                const location = parseInt(document.getElementById('location').value, 10);
-                const minMatchCharLength = parseInt(document.getElementById('minMatchCharLength').value, 10);
+                
+                var query = document.getElementById('searchInput').value;
+                
+                var threshold = 0.6;
+                var distance = 0;
+                var location = 600;
+                var useExtendedSearch = false;
+                var minMatchCharLength = 2;
+                
+                if(debug == true)
+                {
+                    threshold = parseFloat(document.getElementById('threshold').value);
+                    distance = parseInt(document.getElementById('distance').value, 10);
+                    location = parseInt(document.getElementById('location').value, 10);
+                    useExtendedSearch = document.getElementById('useExtendedSearch').checked;
+                    minMatchCharLength = parseInt(document.getElementById('minMatchCharLength').value, 10);
+                }
 
                 const options = {
                     keys: ['title', 'content'], 
@@ -430,17 +485,31 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                     var snippet = getSnippet(content, query);
                     var score = result.score.toFixed(2); 
                     var matches = result.matches; 
-
-                    var li = document.createElement('li');
-
-                    var itemOutput = '<a href="' + link + '"><h3>' + title + '</h3></a><p>' + snippet + '</p>';
-                    if(debug == true) itemOutput += '<p class="small">Score: ' + score +" &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches +"</p>";
-
-                    li.innerHTML = itemOutput;
+                    var keywords = result.item.keywords;
                     
                     
-                    resultsList.appendChild(li);
+                    if (keywords && !keywords.includes("documentation")) {
+                        var li = document.createElement('li');
+
+                        var itemOutput = '<a href="' + link + '"><h3>' + title + '</h3></a><p>' + snippet + '</p>';
+                        if(debug == true) itemOutput += '<p class="small">Score: ' + score +" &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches +"</p>";
+
+                        li.innerHTML = itemOutput;
+                        resultsList.appendChild(li);
+                    }
                 });
+                
+                
+                var collapseElement = document.getElementById('results-container');
+
+                
+                var collapseInstance = new bootstrap.Collapse(collapseElement, {
+                    toggle: false 
+                });
+
+                
+                collapseInstance.show();
+                
             }
 
             function getSnippet(content, query) {
@@ -473,8 +542,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                     var escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 
                     
-                    var regex = new RegExp('(' + escapedQuery + '(?:s|es)?)', 'gi');
-
+                    var regex = new RegExp('(' + escapedQuery + ')', 'gi');
 
                     
                     snippet = snippet.replace(regex, '<span class="highlight-1">$1</span>');
