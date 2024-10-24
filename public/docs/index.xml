@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on Hugo wodpress</title>
-    <link>http://localhost:56326/docs/</link>
+    <link>http://localhost:64961/docs/</link>
     <description>Recent content in Docs on Hugo wodpress</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-au</language>
-    <atom:link href="http://localhost:56326/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64961/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page templates</title>
-      <link>http://localhost:56326/docs/page-templates/</link>
+      <link>http://localhost:64961/docs/page-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56326/docs/page-templates/</guid>
-      <description> Home Referencing Page templates </description>
+      <guid>http://localhost:64961/docs/page-templates/</guid>
+      <description>&lt;ul class=&#34;breadcrumbs&#34;&gt;&#xA;&#x9;&lt;li&gt;&lt;a href=&#34;http://localhost:64961/dewey-design/&#34; tabindex=&#34;-1&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&#xA;&#x9;&lt;li&gt;&lt;a href=&#34;&#34; tabindex=&#34;-1&#34;&gt;Referencing&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a id=&#34;main-content&#34;&gt;&lt;/a&gt;&#xA;&lt;h1 class=&#34;margin-top-zero&#34;&gt;Page templates&lt;/h1&gt;&#xA;&lt;p class=&#34;lead&#34;There are a variety of page templates available for use in the Learning lab.  default page template will work for most pages, there are other options available. Page templates can be selected in the Page attributes box.&lt;/p&gt;&#xA;&lt;h2&gt;Default template&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;picostrap5-child-base/page.php&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;All content pages will use this template. It contains:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;    &lt;li&gt;Header&lt;/li&gt;&#xA;    &lt;li&gt;Breadcrumbs&lt;/li&gt;&#xA;    &lt;li&gt;Content (including title)&lt;/li&gt;&#xA;    &lt;li&gt;Right navigation&lt;/li&gt;&#xA;    &lt;li&gt;Previous and next page buttons&lt;/li&gt;&#xA;    &lt;li&gt;Additional resources (an html content area for additional links)&lt;/li&gt;&#xA;    &lt;li&gt;Keywords&lt;/li&gt;&#xA;    &lt;li&gt;Footer&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For screens wider than 1400px, the content is 856px wide, and the nav is 392px wide.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shortcode escaper</title>
-      <link>http://localhost:56326/docs/shortcode-escape/</link>
+      <link>http://localhost:64961/docs/shortcode-escape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56326/docs/shortcode-escape/</guid>
-      <description> Home Referencing Bracket Escaper Paste your code with brackets into the first text area, and the escaped content will appear in the second text area.&#xA;Escape Brackets </description>
+      <guid>http://localhost:64961/docs/shortcode-escape/</guid>
+      <description>&lt;ul class=&#34;breadcrumbs&#34;&gt;&#xA;&#x9;&lt;li&gt;&lt;a href=&#34;http://localhost:64961/dewey-design/&#34; tabindex=&#34;-1&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&#xA;&#x9;&lt;li&gt;&lt;a href=&#34;&#34; tabindex=&#34;-1&#34;&gt;Referencing&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a id=&#34;main-content&#34;&gt;&lt;/a&gt;&#xA;&lt;h1&gt;Bracket Escaper&lt;/h1&gt;&#xA;&lt;p&gt;Paste your code with brackets into the first text area, and the escaped content will appear in the second text area.&lt;/p&gt;&#xA;&lt;textarea id=&#34;inputText&#34; placeholder=&#34;Paste your code here...&#34;&gt;&lt;/textarea&gt;&#xA;&lt;textarea id=&#34;outputText&#34; placeholder=&#34;Escaped content will appear here...&#34; readonly&gt;&lt;/textarea&gt;&#xA;&lt;br&gt;&#xA;&lt;button class=&#34;btn btn-default&#34; onclick=&#34;escapeBrackets()&#34;&gt;Escape Brackets&lt;/button&gt;&#xA;&lt;script&gt;&#xA;    function escapeBrackets() {&#xA;        const inputText = document.getElementById(&#39;inputText&#39;).value;&#xA;        const escapedText = inputText.replace(/\[/g, &#39;&amp;lbrack;&#39;).replace(/\]/g, &#39;&amp;rbrack;&#39;);&#xA;        document.getElementById(&#39;outputText&#39;).value = escapedText;&#xA;    }&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;textarea {&#xA;    width: 100%;&#xA;    height: 10rem;&#xA;    margin-bottom: 4rem;&#xA;}&#xA;&lt;/style&gt;</description>
     </item>
   </channel>
 </rss>

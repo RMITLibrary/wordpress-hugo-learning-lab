@@ -45,7 +45,7 @@ p a:visited:hover {
 }*/
 
 @mixin link-large-base {
-    display: flex;
+    display: inline-flex; /* Use inline-flex */
     align-items: center;
     
     @include link-feature;
