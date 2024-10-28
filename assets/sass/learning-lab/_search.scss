@@ -1,9 +1,11 @@
 .search-container {
     display: flex;
+    max-width: 34rem;
+    width: 100%;
 }
 
-#searchInput {
-    width: 34rem;
+#searchInput { 
+    flex: 1; /* Allows it to take up available space */
     height: 46px;
 
     border: 1px solid $link-color;
@@ -17,6 +19,7 @@
     opacity: 0.8; 
 }
 
+// Custom styling for search button
 #searchButton {
     background-color: $link-color;
     border: none;
@@ -25,6 +28,7 @@
     padding: 0.75rem 1rem;
     height: 46px;
 
+    //mag-glass icon
     .icon {
         display: inline-block;
         width: 20px;
@@ -35,11 +39,12 @@
     }
 }
 
-
+//hidden for now
 #loading-container {
     display: none;
 }
 
+// column layout for keywords
 .keyword-listing {
     ul {
         column-count: 2;
@@ -59,6 +64,7 @@
     }
 }
 
+// search-debug is turned on via query string - debug=true
 .search-debug {
     display: none;
 
@@ -99,6 +105,7 @@
     }
 }
 
+// Google search box styles
 /*
 .search-box-container {
     max-width: 34rem;
