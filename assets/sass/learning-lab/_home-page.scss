@@ -74,40 +74,49 @@
     
     .lead { margin-top: 0; }   
     .small { margin-bottom: 0; }
-    
-    form {
+
+    .search-container2 {
         margin-top: 2rem;
-        width: 100%;
     }
     
-    label {
-        margin: 0;
-        margin-bottom: 0.5rem;
-    }
+    // .search-container2 {
+    //     margin-top: 2rem;
+    //     width: 100%;
+    // }
     
-    .mag-glass {
-        @include mag-glass;
-        width: 20px;
-        height: 20px;
-    }
+    // label {
+    //     margin: 0;
+    //     margin-bottom: 0.5rem;
+    // }
     
-    button {
-        margin: 0;
-    }
+    // .mag-glass {
+    //     @include mag-glass;
+    //     width: 20px;
+    //     height: 20px;
+    // }
     
-    @include media-breakpoint-up(md) {
-        form {
-            display: flex;
-            gap: 1rem;
-        }
+    // button {
+    //     margin: 0;
+    // }
+
+    // input {
+    //     padding-top: 0.5rem;
+    //     padding-bottom: 0.5rem;
+    // }
+    
+    // @include media-breakpoint-up(md) {
+    //     form {
+    //         display: flex;
+    //         gap: 1rem;
+    //     }
         
-        label {
-            display: block;
-            margin: 0;
-            margin-top: 0.25rem;
-        }
+    //     label {
+    //         display: block;
+    //         margin: 0;
+    //         margin-top: 0.5rem;
+    //     }
         
-    }
+    // }
     
     @include media-breakpoint-up(lg) {
 		// Adjust this width as text changes to get a nice clean block with search box - max 40rem

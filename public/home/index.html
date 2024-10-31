@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61136&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64961&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -291,15 +291,24 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <p class="lead">The Learning Lab provides foundation skills and study support materials for writing, assessments, referencing, health sciences, physics, chemistry, maths and much more.</p>
             <p class="small" id="caption-text">Image by Digital Learning, RMIT Library</p>
             
-            <form role="search" action="/search/">
-                <label class="h4" for="search">
+            
+            <div class="search-container label-side">
+                <label for="search">
+                <h2 class="h4">
                     Search <span class="visually-hidden">this website:</span>
+                </h2>
                 </label>
                 <div class="input-group">
-                    <input type="search" id="search" class="form-control">
-                    <button type="submit" class="btn btn-primary"><div class="mag-glass"></div><span class="visually-hidden">Search</span></button>
+                    <input type="search" id="searchInput" class="form-control">
+                    <button type="submit"  id="searchButton" class="btn btn-primary"><div class="mag-glass"></div><span class="visually-hidden">Search</span></button>
                 </div>
-            </form>
+            </div>
+            
+            
+
+            
+
+            
         </div>
         
         
@@ -338,6 +347,32 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     </div>
 </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+
+        
+        function goToSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                window.location.href = `/search/?query=${encodeURIComponent(query)}`;
+            }
+        }
+
+        
+        searchInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                goToSearch();
+            }
+        });
+
+        
+        searchButton.addEventListener('click', function() {
+            goToSearch();
+        });
+    });
+</script>
     
 
  <div class="footer-container" id="wrapper-footer-colophon">

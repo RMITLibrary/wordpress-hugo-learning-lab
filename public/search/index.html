@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61136&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64961&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -290,11 +290,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </nav>
         <a id="main-content"></a>
         
-        <h1 class="margin-top-zero">Search the learning lab</h1>
          
+        
+
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search..."><button class="wbtn wbtn-primary" id="searchButton"><span class="icon"></span> <span class="visually-hidden">Search</span></button>
-        </div> 
+            <label for="search"><h1 class="margin-top-zero">Search the learning lab</h1></label>
+            <div class="input-group">
+                <input type="search" id="searchInput" class="form-control" placeholder="Search...">
+                <button type="submit"  id="searchButton" class="btn btn-primary"><div class="mag-glass"></div><span class="visually-hidden">Search</span></button>
+            </div>
+        </div>
          
         
         <div id="search-debug" class="search-debug">
@@ -329,11 +334,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 </label>
                 <input type="checkbox" id="useExtendedSearch">
             </div>
-        </div>
-        
-        
-        <div id="loading-container">
-            <h2>Searching... </h2>
         </div>
         
         
@@ -429,9 +429,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     var debug = false;
     
     
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+    const queryStringSearch = window.location.search;
+    const urlParams = new URLSearchParams(queryStringSearch);
     const debugBool = urlParams.get('debug');
+    const searchString = urlParams.get('query');
     
     if(debugBool == 'true') {
         debug = true;
@@ -439,8 +440,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         var debugInterface = document.getElementById("search-debug");
         debugInterface.style.display = "block";
     }
+
+    console.log("searchString: "+ searchString);
     
-    console.log("debugBool: "+ debugBool);
     
     
     fetch(dataURL)
@@ -449,13 +451,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             function performSearch() {
                 
                 var query = document.getElementById('searchInput').value;
-                console.log("query: " +query);
-
-                var threshold = 0.6;
+                var threshold = 0.4;
                 var distance = 1200;
                 var location = 0;
                 var useExtendedSearch = false;
-                var minMatchCharLength = 2;
+                var minMatchCharLength = 4;
                 
                 if(debug == true)
                 {
@@ -506,11 +506,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                         var keywords = result.item.keywords;
                         
                         
-                        if (keywords && !keywords.some(keyword => keyword.toLowerCase() === "documentation")) {
+                        if (keywords && !keywords.some(keyword => {
+                            const lowerKeyword = keyword.toLowerCase();
+                            return ["documentation", "archive", "redirect"].includes(lowerKeyword);
+                        })) {
                             var li = document.createElement('li');
 
                             var itemOutput = '<a href="' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
-                            if(debug == true) itemOutput += '<p class="small">Score: ' + score +" &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches +"</p>";
+                            if (debug === true) itemOutput += '<p class="small">Score: ' + score + " &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches + "</p>";
 
                             li.innerHTML = itemOutput;
                             resultsList.appendChild(li);
@@ -572,6 +575,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
                 
                 return content.substring(0, 160);
+            }
+
+            
+            if(searchString != null)
+            {
+                
+                document.getElementById('searchInput').value = searchString;
+                performSearch();
             }
 
             

@@ -24,11 +24,18 @@
         </nav>
         <a id="main-content"></a>
         
-        <h1 class="margin-top-zero">Search the learning lab</h1>
         <!-- START search input --> 
-        <div class="search-container">
+        <!--<div class="search-container">
             <input type="text" id="searchInput" placeholder="Search..."><button class="wbtn wbtn-primary" id="searchButton"><span class="icon"></span> <span class="visually-hidden">Search</span></button>
-        </div> 
+        </div>-->
+
+        <div class="search-container">
+            <label for="search"><h1 class="margin-top-zero">Search the learning lab</h1></label>
+            <div class="input-group">
+                <input type="search" id="searchInput" class="form-control" placeholder="Search...">
+                <button type="submit"  id="searchButton" class="btn btn-primary"><div class="mag-glass"></div><span class="visually-hidden">Search</span></button>
+            </div>
+        </div>
         <!-- END search input --> 
         <!-- START debug -->
         <div id="search-debug" class="search-debug">
@@ -65,11 +72,6 @@
             </div>
         </div>
         <!-- END debug -->
-        <!-- START loading div -->
-        <div id="loading-container">
-            <h2>Searching... </h2>
-        </div>
-        <!-- END loading div -->
         <!-- START results div -->
         <div id="results-container" class="collapse">
             <div>
@@ -163,9 +165,10 @@
     var debug = false;
     
     //Check query string for debug=true. If it is there, show debug interface
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+    const queryStringSearch = window.location.search;
+    const urlParams = new URLSearchParams(queryStringSearch);
     const debugBool = urlParams.get('debug');
+    const searchString = urlParams.get('query');
     
     if(debugBool == 'true') {
         debug = true;
@@ -173,8 +176,9 @@
         var debugInterface = document.getElementById("search-debug");
         debugInterface.style.display = "block";
     }
-    
-    console.log("debugBool: "+ debugBool);
+
+    console.log("searchString: "+ searchString);
+    //console.log("debugBool: "+ debugBool);
     
     // Fetch the JSON data
     fetch(dataURL)
@@ -183,13 +187,11 @@
             function performSearch() {
                 
                 var query = document.getElementById('searchInput').value;
-                console.log("query: " +query);
-
-                var threshold = 0.6;
+                var threshold = 0.4;
                 var distance = 1200;
                 var location = 0;
                 var useExtendedSearch = false;
-                var minMatchCharLength = 2;
+                var minMatchCharLength = 4;
                 
                 if(debug == true)
                 {
@@ -239,12 +241,15 @@
                         var matches = result.matches; // Get matches
                         var keywords = result.item.keywords;
                         
-                        //only output result if keywords doesn't contain "documentation"
-                        if (keywords && !keywords.some(keyword => keyword.toLowerCase() === "documentation")) {
+                        // Only output result if keywords don't contain "documentation", "archive", or "redirect"
+                        if (keywords && !keywords.some(keyword => {
+                            const lowerKeyword = keyword.toLowerCase();
+                            return ["documentation", "archive", "redirect"].includes(lowerKeyword);
+                        })) {
                             var li = document.createElement('li');
 
                             var itemOutput = '<a href="' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
-                            if(debug == true) itemOutput += '<p class="small">Score: ' + score +" &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches +"</p>";
+                            if (debug === true) itemOutput += '<p class="small">Score: ' + score + " &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches + "</p>";
 
                             li.innerHTML = itemOutput;
                             resultsList.appendChild(li);
@@ -306,6 +311,14 @@
 
                 // If the query is not found, return the first 160 characters
                 return content.substring(0, 160);
+            }
+
+            //If queryString has query=something then do the search. Used to make home screen search work.
+            if(searchString != null)
+            {
+                //place searchString into input and then execute search
+                document.getElementById('searchInput').value = searchString;
+                performSearch();
             }
 
             // Listen for button click
