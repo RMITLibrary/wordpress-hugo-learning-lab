@@ -9,4 +9,4 @@ placed at the bottom of the html page
 
 {{ $options := (dict "targetPath" "/wp-content/themes/picostrap5-child-base/css-output/bundle.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "sass/main.scss" | toCSS $options | minify }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+<link rel="stylesheet" href="{{ $style.RelPermalink }}?v=1.0.4">
