@@ -26,6 +26,7 @@ parent: "Examples"
 <h2>Examples of reporting words</h2>
 <div class="table-responsive">
 	<table class="table-striped">
+		<thead><tr><th>This is an example</th><th>This is another</th></tr></thead>
 		<tbody><tr>
 			<td style="width: 148px;">Suggest (that)</td>
 			<td>Studies outlined by Leonard et al. (1999) suggest that personality and disposition play an equally important role in motivation.</td>
@@ -35,7 +36,7 @@ parent: "Examples"
 			<td>Leonard et al. (1999) argue that there are three elements of self-perception.</td>
 		</tr>
 		<tr>
-			<td>Contend</td>
+			<th>Contend</th>
 			<td>Mullins (1994) contends that motivation to work well is usually related to job satisfaction.</td>
 		</tr>
 		<tr>

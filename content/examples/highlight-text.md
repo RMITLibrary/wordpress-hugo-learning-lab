@@ -8,9 +8,9 @@ parent: "Examples"
 
 
 
-<p class="lead">If you don&#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them.</p>
+<p class="lead">If you don&#8217;t know how to start writing your artist statement, mind mapping words and ideas that relate to your creative practice is a good way to visualise concepts and create relationships between them. Bl;erfgh</p>
 <h2>Highlight text</h2>
-<div class="highlight-text">
+<div class="highlight-text hl-one-column">
     <div class="key">
         <ul aria-hidden="true">
             <li class="highlight-1">1 Repetition</li>
