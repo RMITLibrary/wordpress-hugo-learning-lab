@@ -7,23 +7,6 @@
 }
 */
 
-// Develop this further to allow more control and options
-// Place in design system
-.my-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    
-    @include media-breakpoint-up(sm) { 
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-    
-    @include media-breakpoint-up(lg) { 
-        gap: 1.5rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-    }
-}
-
 aside.visually-hidden-focusable div {
     padding: 16px 24px;
     
@@ -38,5 +21,62 @@ aside.visually-hidden-focusable div {
     
     & > :last-child {
         margin-bottom: 0;
+    }
+}
+
+//Style sidenote to resemble a blockquote
+
+.sidenote img, .marginnote img { 
+    max-width: 300px !important;
+}
+
+.sidenote {
+	display: block;
+	
+    //set responsive padding and margins for blockquote
+    @include do-space(margin-top, md); 
+    @include do-space(margin-bottom, md);
+    
+    @include do-space(padding-top, sm); 
+    @include do-space(padding-bottom, sm); 
+    
+    @include do-space(padding-left, md); 
+    @include do-space(padding-right, md); 
+    
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.25rem solid $accent-color;
+
+    background-color: var(--bs-primary-bg-subtle);
+	
+}
+
+.marginnote { 
+    float: right;
+    width: 300px;
+    font-size: 0.9em;
+    margin: 0 0 1em 2em;
+}
+
+.sidenote-number, .margin-toggle {
+    display: none; 
+}
+
+// Dark mode
+@include color-mode(dark) {
+	
+    .sidenote {
+		border-left: 0.25rem solid $accent-color-dark;
+	}
+}
+
+// Override .btn-nav-container styles to remove border-bottom at lsrge breakpoints, 
+// due to the presence of keywords on every page.
+
+// Previous and next buttons
+.btn-nav-container {
+	//At a large breakpoint, add in a seperator line
+    @include media-breakpoint-down(xl) {
+        border: 0;
+        padding: 0;
     }
 }
