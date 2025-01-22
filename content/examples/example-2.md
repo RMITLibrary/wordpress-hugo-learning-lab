@@ -43,3 +43,102 @@ margin-top: -30px;" alt="blockquote example with illustrated quotation marks">
 		<p><strong>Please note</strong>: The examples on this page use the APA referencing style. Check your course handbook or speak to your instructor about the referencing style required in your area of study.</p>
 	</div>
 </blockquote>
+
+<button class="btn-embed" type="button" data-bs-toggle="modal" data-bs-target="#embedModal">
+    Embed this page
+</button>
+
+<!-- START modal -->
+<div class="modal fade" id="embedModal" tabindex="-1" aria-labelledby="embedModalLabel" aria-hidden="true">
+	<!-- START modal-dialog -->
+	<div class="modal-dialog">
+		<!-- START modal-content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="h3 margin-top-zero margin-bot-zero" id="embedModalLabel">Embed this page</h2>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<!-- START modal-body -->
+			<div class="modal-body">
+				<textarea id="embedCode" class="code-section mt-3" rows="4" readonly aria-label="Embed Code"></textarea>
+				<form id="embedForm">
+					<div class="form-check-inline">
+						<input class="form-check-input" type="checkbox" id="hideTitle" onchange="updateEmbedCode()" aria-describedby="hideTitleDescription">
+						<label class="form-check-label small" for="hideTitle">Hide page title</label>
+					</div>
+					<div class="form-check-inline">
+						<input class="form-check-input" type="checkbox" id="hideIntro" onchange="updateEmbedCode()" aria-describedby="hideIntroDescription">
+						<label class="form-check-label small" for="hideIntro">Hide introduction</label>
+					</div>
+				</form>
+				<div class="btn-container">
+					<button id="copy-code" type="button" class="btn btn-primary">Copy code</button>
+					<div id="feedback" class="collapse small"></div>
+				</div>
+				<!-- START accordion item -->
+				<div class="accordion-item transcript margin-top-xs">
+					<p class="accordion-header" id="Transcript-head">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Transcript-body" aria-expanded="false" aria-controls="Transcript-body">
+						How to embed in Canvas LMS
+					</button>
+					</p>
+					<div id="Transcript-body" class="accordion-collapse collapse" aria-labelledby="Transcript-head">
+					<div class="accordion-body padding-top-zero">
+						<ol class="small">
+							<li>Copy the iframe code above.</li>
+							<li>Go to the course in Canvas where you want to add the content.</li>
+							<li>Navigate to the page or module where you want to embed the content.</li>
+							<li>In the Rich Content Editor, click on the "HTML Editor" link.</li>
+							<li>Paste the iframe code into the HTML area.</li>
+							<li>Switch back to the Rich Content Editor to see the embedded content.</li>
+							<li>Save the changes to your page or module.</li>
+						</ol>
+						<p class="small">Note: Ensure that your permissions allow embedding external content in your Canvas LMS instance.</p>
+					</div>
+					</div>
+				</div>
+				<!-- END accordion item -->
+			</div>
+			<!-- END modal-body -->
+		</div>
+		<!-- END modal-content -->
+	</div>
+	<!-- END modal-dialog -->
+</div>
+<!-- END modal -->
+
+<script>
+
+const copyCodeButton = document.getElementById("copy-code");
+const feedback = document.getElementById("feedback");
+const embedCodeBox = document.getElementById('embedCode')
+
+function updateEmbedCode() {
+	const hideTitle = document.getElementById('hideTitle').checked;
+	const hideIntro = document.getElementById('hideIntro').checked;
+	const currentUrl = window.location.origin + window.location.pathname;
+	let url = `${currentUrl}?iframe=true`;
+	if (hideTitle) url += '&hide-title=true';
+	if (hideIntro) url += '&hide-intro=true';
+
+	const embedCode = `<iframe src="${url}" width="100%" scrolling="no"></iframe>`;
+	embedCodeBox.value = embedCode;
+
+}
+
+//Called when "Copy code" is clicked. Copy the code to clipboard  (won't work on http:// only https:// )
+function copyCode(e) {
+	console.log("Code copied");
+    navigator.clipboard.writeText(embedCodeBox.innerHTML);
+	
+	feedback.innerHTML = "Code copied to clipboard";
+	feedback.classList.add("show");
+}
+
+// Initialize the embed code on page load
+document.addEventListener('DOMContentLoaded', function() {
+	updateEmbedCode();
+	copyCodeButton.addEventListener("click", copyCode);
+});
+
+</script>

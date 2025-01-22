@@ -20,11 +20,11 @@
 }
 
 @include color-mode(dark) {
-	iframe {
+	/*iframe {
 		//drop the contrast in dark mode to reduce eye strain.
 		//once embedded content has a preoper dark mode, this could be removed
         filter: brightness(0.9) contrast(0.9);
-    }
+    }*/
 }
 
 

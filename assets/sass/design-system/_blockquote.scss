@@ -35,7 +35,7 @@ blockquote {
                 align-items: center;
 				text-wrap-style: auto;
                 
-                // h4 fontsize 
+                /* h4 fontsize */
                 font-size: 1.25rem;
                 @include media-breakpoint-up(md) { font-size: 1.5rem; }
             }
@@ -47,8 +47,8 @@ blockquote {
 				height: 2rem;
 				margin-left: 0.25rem;
 				transform: rotate(-90deg);
-				flex-shrink: 0; // Prevents shrinking
-				flex-basis: 2rem; // Ensures a fixed size
+				flex-shrink: 0; /* Prevents shrinking */
+				flex-basis: 2rem; /* Ensures a fixed size */
 			}
 
 			p, small {
