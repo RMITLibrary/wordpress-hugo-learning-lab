@@ -1,4 +1,4 @@
-#theme-switcher {
+/* #theme-switcher {
     
 	h2 {
 		margin-top: 2rem;
@@ -52,4 +52,82 @@
     @include media-breakpoint-up(lg) {
         margin-left: 0;
     }
+}
+ */
+
+
+.theme-switch {
+	h2 {
+		margin-top: 0;
+	}
+
+	.form-check-inline:last-child {
+		margin-right: 0rem;
+	}
+
+	background-color: $red;
+}
+
+.theme-switch.hamburger-menu {
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+
+	h2 { 
+		@extend h5;
+		color: $white;
+	}
+
+	.bg {
+		display: inline-block;
+		color: var(--bs-body-color);
+		background-color: var(--bs-body-bg);
+
+		border-radius: 0.5rem;
+		padding: 1rem 1rem;
+
+		border: 1px solid $rmit-blue;
+	}
+
+	@include media-breakpoint-up(sm) {
+		
+		.bg {
+			padding: 1rem 1.5rem;
+		}
+
+		// .form-check-inline {
+		// 	margin-right: 1.5rem;
+		// }
+
+		// .form-check-inline:last-child {
+		// 	margin-right: 0.5rem;
+		// }
+	}
+    
+    // assuming theme-switcher is displayed underneath right nav
+    // adjust padding to align with right hand nav
+    @include media-breakpoint-up(lg) {
+        margin-left: 1.5rem;
+    }
+}
+
+.theme-switch.compact {
+	margin-top: 3rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid $interface-grey;
+
+	h2 {
+		@include type-small;
+		font-family: $font-family-sans-serif;
+		color: var(--bs-body-color);
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	.bg {
+		display: inline-block;
+	}
+
+	label {
+		@include type-small;
+	}
 }

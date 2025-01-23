@@ -44,9 +44,23 @@ margin-top: -30px;" alt="blockquote example with illustrated quotation marks">
 	</div>
 </blockquote>
 
-<button class="btn-embed" type="button" data-bs-toggle="modal" data-bs-target="#embedModal">
-    Embed this page
-</button>
+<div id="additional-info">	
+	<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+	<hr class="margin-top-xl">
+	<div class="keyword-embed-contain">
+		<div class="keywords">
+			<h2 class="h5">Keywords</h2>
+			<ul>
+				<li><a href="https://lab.bitma.app/keyword/sentences/">Sentences</a></li>  
+				<li><a href="https://lab.bitma.app/keyword/essay-structure/">Essay structure</a></li>  
+				<li><a href="https://lab.bitma.app/keyword/academic-writing/">Academic writing</a></li>  
+			</ul>
+		</div>
+		<button class="btn-embed" type="button" data-bs-toggle="modal" data-bs-target="#embedModal">Embed this page</button>
+	</div>
+</div>
+
+
 
 <!-- START modal -->
 <div class="modal fade" id="embedModal" tabindex="-1" aria-labelledby="embedModalLabel" aria-hidden="true">
@@ -129,7 +143,7 @@ function updateEmbedCode() {
 //Called when "Copy code" is clicked. Copy the code to clipboard  (won't work on http:// only https:// )
 function copyCode(e) {
 	console.log("Code copied");
-    navigator.clipboard.writeText(embedCodeBox.innerHTML);
+    navigator.clipboard.writeText(embedCodeBox.value);
 	
 	feedback.innerHTML = "Code copied to clipboard";
 	feedback.classList.add("show");

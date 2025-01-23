@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=60607&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56360&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-<link rel="stylesheet" href="/wp-content/themes/picostrap5-child-base/css-output/bundle.min.min.css?v=1.0.5">
+<link rel="stylesheet" href="/wp-content/themes/picostrap5-child-base/css-output/bundle.min.min.css?v=1.0.6">
 </head>
 <body class="page-template page-template-page-templates page-template-page-sidebar-right page-template-page-templatespage-sidebar-right-php page page-id-2516 page-parent page-child parent-pageid-2500 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_" >
 
@@ -271,6 +271,25 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div>
 				
+
+				<form class="theme-switch hamburger-menu">
+					<h2>Blergh</h2>
+					<div class="bg">
+					  <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" data-bs-theme-value="auto" value="option1">
+						<label class="form-check-label" for="inlineRadio1">System</label>
+					  </div>
+					  <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" data-bs-theme-value="light" value="option2">
+						<label class="form-check-label" for="inlineRadio2">Light</label>
+					  </div>
+					  <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" data-bs-theme-value="dark" value="option3">
+						<label class="form-check-labe" for="inlineRadio3">Dark</label>
+					  </div>
+					</div>
+				</form>
+				
             </div>
             
         </div>
@@ -359,9 +378,21 @@ margin-top: -30px;" alt="blockquote example with illustrated quotation marks">
 		<p><strong>Please note</strong>: The examples on this page use the APA referencing style. Check your course handbook or speak to your instructor about the referencing style required in your area of study.</p>
 	</div>
 </blockquote>
-<button class="btn-embed" type="button" data-bs-toggle="modal" data-bs-target="#embedModal">
-    Embed this page
-</button>
+<div id="additional-info">	
+	<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+	<hr class="margin-top-xl">
+	<div class="keyword-embed-contain">
+		<div class="keywords">
+			<h2 class="h5">Keywords</h2>
+			<ul>
+				<li><a href="https://lab.bitma.app/keyword/sentences/">Sentences</a></li>  
+				<li><a href="https://lab.bitma.app/keyword/essay-structure/">Essay structure</a></li>  
+				<li><a href="https://lab.bitma.app/keyword/academic-writing/">Academic writing</a></li>  
+			</ul>
+		</div>
+		<button class="btn-embed" type="button" data-bs-toggle="modal" data-bs-target="#embedModal">Embed this page</button>
+	</div>
+</div>
 <!-- START modal -->
 <div class="modal fade" id="embedModal" tabindex="-1" aria-labelledby="embedModalLabel" aria-hidden="true">
 	<!-- START modal-dialog -->
@@ -442,7 +473,7 @@ function updateEmbedCode() {
 //Called when "Copy code" is clicked. Copy the code to clipboard  (won't work on http:// only https:// )
 function copyCode(e) {
 	console.log("Code copied");
-    navigator.clipboard.writeText(embedCodeBox.innerHTML);
+    navigator.clipboard.writeText(embedCodeBox.value);
 	
 	feedback.innerHTML = "Code copied to clipboard";
 	feedback.classList.add("show");
