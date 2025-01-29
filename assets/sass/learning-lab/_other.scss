@@ -7,6 +7,24 @@
 }
 */
 
+.my-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+    }
+}
+
+.btn-print {
+    div {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+}
+
 aside.visually-hidden-focusable div {
     padding: 16px 24px;
     

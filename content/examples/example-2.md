@@ -10,8 +10,13 @@ parent: "Examples"
 <a id="main-content"></a>
 <h1 class="margin-top-zero">Quoting</h1>
 <p class="lead">When you are researching a topic, sometimes you want to include the exact words of another author or speaker in your own work. Using someone’s words in their original form is called quoting, or including a direct quote.</p>
+<div class="my-flex">
+	<button class="btn btn-print"><div>Print  ‘RMIT Harvard’</div></button>
+	<button class="btn btn-print"><div>Print 'Websites and webpage documents' chapter</div></button>
+</div>
 <h2>When to quote</h2>
 <p>Quoting is the way to include the exact words of others in our own work. You might want to use a quote when the specific words that an author or speaker has used are important, such as when someone offers a new definition for a term or presents a new theory.</p>
+<button class="btn btn-print"><div>Print this section</div></button>
 <p>It is important to only use direct quotes when the exact words of someone else add particular value. If you use too many quotes, you are simply reporting information that you have found, instead of offering your own analysis and evaluation of the ideas. <a href="paraphrasing-4.html">Paraphrasing</a> and <a href="summarising-0.html">summarising</a>, on the other hand, show that you have really understood the ideas or issues you are investigating.</p>
 <h2>How to insert a direct quote</h2>
 <p>Follow these steps to use direct quotes in your written assignments.</p>
