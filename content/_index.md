@@ -1,4 +1,4 @@
 ---
 title: Home
 ---
-Hello, I'm a ferocious lion.
+Changing this copy of thehome page to demonstrate git flow update.
