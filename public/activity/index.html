@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="nav-fixed">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56360&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
      
     <meta charset="UTF-8">
@@ -44,6 +44,27 @@ MathJax = {
 };
 
 </script>
+
+<script>
+	(function() {
+	  'use strict';
+  
+	  const getStoredTheme = () => localStorage.getItem('theme');
+  
+	  const getPreferredTheme = () => {
+		const storedTheme = getStoredTheme();
+		return storedTheme ? storedTheme : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+	  };
+  
+	  const setTheme = theme => {
+		const themeToSet = theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme;
+		document.documentElement.setAttribute('data-bs-theme', themeToSet);
+	  };
+  
+	  setTheme(getPreferredTheme());
+	})();
+  </script>
+  
 <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
 <link rel='stylesheet' id='wp-block-library-css' href='https://ll-nav.blackaeonium.net/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' media='all' />
 <style id='classic-theme-styles-inline-css'>
@@ -67,7 +88,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-<link rel="stylesheet" href="/wp-content/themes/picostrap5-child-base/css-output/bundle.min.min.css?v=1.0.5">
+<link rel="stylesheet" href="/wp-content/themes/picostrap5-child-base/css-output/bundle.min.min.6bcfcb95f5d7995c959c5c494f4e7643f9b64618ce8a45e87a1078e2d251b340.css">
 </head>
 <body class="page-template page-template-page-templates page-template-page-sidebar-right page-template-page-templatespage-sidebar-right-php page page-id-2516 page-parent page-child parent-pageid-2500 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_" >
 
@@ -253,42 +274,26 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 </div>
                 
 				
-				<div id="theme-switcher">
-					<h2 class="h5">Theme</h2>
-					<div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" data-bs-theme-value="auto" value="option1">
-							<label class="form-check-label" for="inlineRadio1">System</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" data-bs-theme-value="light" value="option2">
-							<label class="form-check-label" for="inlineRadio2">Light</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" data-bs-theme-value="dark" value="option3">
-							<label class="form-check-label" for="inlineRadio3">Dark</label>
-						</div>
-					</div>
-				</div>
-				
-
 				<form class="theme-switch hamburger-menu">
 					<h2>Theme</h2>
 					<div class="bg">
-					  <div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" data-bs-theme-value="auto" value="option1">
-						<label class="form-check-label" for="inlineRadio1">System</label>
-					  </div>
-					  <div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" data-bs-theme-value="light" value="option2">
-						<label class="form-check-label" for="inlineRadio2">Light</label>
-					  </div>
-					  <div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" data-bs-theme-value="dark" value="option3">
-						<label class="form-check-labe" for="inlineRadio3">Dark</label>
-					  </div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="auto">
+							<label class="form-check-label">System</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="light">
+							<label class="form-check-label">Light</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="dark">
+							<label class="form-check-label">Dark</label>
+						</div>
 					</div>
 				</form>
+				
+
+				
 				
             </div>
             
@@ -327,11 +332,27 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-				<div style="margin: 24px;">
-    <button type="button" class="btn btn-default" data-bs-theme-value="light" aria-pressed="false">Light</button>
-    <button type="button" class="btn btn-default" data-bs-theme-value="dark" aria-pressed="false">Dark</button>
-    <button type="button" class="btn btn-default" data-bs-theme-value="auto" aria-pressed="true">Auto</button>
-</div>
+				
+<form class="theme-switch theme-compact theme-right-nav">
+  <fieldset>
+      <legend>Theme</legend>
+      <div class="bg">
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="auto" aria-label="System">
+              <span class="form-check-label">System</span>
+          </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="light" aria-label="Light">
+              <span class="form-check-label">Light</span>
+          </div> 
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="themeOptions" data-bs-theme-value="dark" aria-label="Dark">
+              <span class="form-check-label">Dark</span>
+          </div>
+      </div>
+  </fieldset>
+</form>
+
 
             </div>
             
@@ -535,81 +556,50 @@ function showHideMenu() {
 
 
 
-    
-    (() => {
-  'use strict'
+(function() {
+    'use strict';
 
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+    const getStoredTheme = () => localStorage.getItem('theme');
 
-  const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme) {
-      return storedTheme
-    }
+    const setStoredTheme = theme => localStorage.setItem('theme', theme);
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
+    const getPreferredTheme = () => {
+      const storedTheme = getStoredTheme();
+      return storedTheme ? storedTheme : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    };
 
-  const setTheme = theme => {
-    if (theme === 'auto') {
-      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
-    }
-  }
+    const setTheme = theme => {
+      const themeToSet = theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme;
+      document.documentElement.setAttribute('data-bs-theme', themeToSet);
+    };
 
-  setTheme(getPreferredTheme())
+    const showActiveTheme = theme => {
+      document.querySelectorAll('.theme-switch').forEach(themeSwitcher => {
+        themeSwitcher.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = (element.getAttribute('data-bs-theme-value') === theme);
+        });
+      });
+    };
 
-  const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      const storedTheme = getStoredTheme();
+      if (storedTheme !== 'light' && storedTheme !== 'dark') {
+        setTheme(getPreferredTheme());
+      }
+    });
 
-    if (!themeSwitcher) {
-      return
-    }
-
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
-    const activeThemeIcon = document.querySelector('.theme-icon-active use')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
-
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-      element.classList.remove('active')
-      element.setAttribute('aria-pressed', 'false')
-    })
-
-    btnToActive.classList.add('active')
-    btnToActive.setAttribute('aria-pressed', 'true')
-    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-    if (focus) {
-      themeSwitcher.focus()
-    }
-  }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme !== 'light' && storedTheme !== 'dark') {
-      setTheme(getPreferredTheme())
-    }
-  })
-
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
-
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          setStoredTheme(theme)
-          setTheme(theme)
-          showActiveTheme(theme, true)
-        })
-      })
-  })
-})()
+    window.addEventListener('DOMContentLoaded', () => {
+      showActiveTheme(getPreferredTheme());
+      document.querySelectorAll('.theme-switch [data-bs-theme-value]').forEach(toggle => {
+        toggle.addEventListener('change', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value');
+          setStoredTheme(theme);
+          setTheme(theme);
+          showActiveTheme(theme);
+        });
+      });
+    });
+  })();
     
 </script>
     
