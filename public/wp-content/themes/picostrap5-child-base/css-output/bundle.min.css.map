@@ -130,7 +130,7 @@
 		"assets/sass/learning-lab/_code-examples.scss",
 		"assets/sass/learning-lab/_other.scss",
 		"assets/sass/learning-lab/_modal.scss",
-		"assets/sass/learning-lab/_end-of-section.css",
+		"assets/sass/learning-lab/_end-of-section.scss",
 		"assets/sass/_custom.scss"
 	],
 	"sourcesContent": [
