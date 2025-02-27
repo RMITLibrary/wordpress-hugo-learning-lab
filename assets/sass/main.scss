@@ -59,6 +59,7 @@ Note theme_variables.scss is now loaded by bootstrap-loader but can be important
 @import "learning-lab/code-examples";
 @import "learning-lab/other";             //other styles that don't fit into a category
 @import "learning-lab/modal"; 
+@import "learning-lab/_end-of-section";
     
 //Any final custom styles can go here
 @import "custom";

@@ -1,4 +1,36 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum semper elit, non dignissim dolor iaculis sed. Fusce gravida, turpis at pulvinar feugiat, elit tortor convallis urna, sit amet sollicitudin augue ex a velit. Curabitur varius sapien ligula, sit amet porta sapien cursus ac.</p>
+
+<div class="end-of-section">
+	<div class="eos-title">
+		<div>
+			<p>Well done! You’ve finished:</p>
+			<h2>Essays</h2>
+		</div>
+	</div>
+	<div class="eos-content">
+		<div class="left">
+			<p class="eos-left-title">Key takeaways:</p>
+			<div class="eos-left-content">
+                <ul>
+                    <li>Analyse the assignment and plan your time accordingly</li>
+                    <li>Research using the RMIT Library</li>
+                    <li>Structure and write effectively</li>
+                </ul>
+			</div>
+		</div>
+		<div class="right">
+			<p class="eos-right-title">Want more? Try these resources:</p>
+			<div class="eos-right-content">
+                <ul>
+                    <li><a href="" target="_blank">Study essentials</a></li>
+                    <li><a href="" target="_blank">Academic style</a></li>
+                    <li><a href="" target="_blank">Essays</a></li>
+                </ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="two-col">
     <figure>
        <img src="../images/img-example-graph.png" alt="An example image" class="border" />
